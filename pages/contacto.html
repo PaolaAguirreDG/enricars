@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Enricars</title>
+</head>
+<body>
+    <header>
+        <!-- Titulo principal del sitio -->
+        <h1>EnriCars | Automotores</h1>
+        <!-- El centro de navegación PRINCIPAL de una pagina. Es decir su menu de navegacion -->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./quienessomos.html">Quienes somos</a></li>
+                <li><a href="./preguntasfrecuentes.html">Preguntas frecuentes</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contactanos</h2>
+            <form>
+                <fieldset>
+                    <legend>Tus datos</legend>
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="email">Mail</label>
+                    <input type="email" id="contrasena" name="email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Cual es tu consulta</legend>
+                    <p>Selecciona el curso que deseas:</p>
+
+                    <input type="radio" id="curso-barista" name="curso_descarga" value="curso_barista" required>
+                    <label for="curso-barista">Curso de barista</label>
+
+                    <input type="radio" id="curso-pasteleria" name="curso_descarga" value="curso_pasteleria">
+                    <label for="curso-pasteleria">Curso de pastelería</label>
+
+                    <input type="radio" id="curso-cata" name="curso_descarga" value="curso_cata">
+                    <label for="curso-cata">Curso de cata</label>
+
+                    <button type="submit" name="accion" value="descargar">Inscribirme</button>
+
+                    <input type="checkbox" id="suscripcion" name="suscripcion">
+                    <label for="suscripcion">Deseo recibir noticias por correo</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Comentarios</legend>
+
+                    <label for="comentarios">Dejanos tu mensaje o consulta:</label>
+                    <textarea id="comentarios" name="comentarios" rows="5" cols="40"
+                        placeholder="Escribe tus comentarios aquí"></textarea>
+
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>
+
+                </fieldset>
+            </form>
+            
+        </section>
+        <section>
+            <h2>Donde estamos</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.559170922213!2d-58.59558628814647!3d-34.71629717280107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc77f0f1d2e4b%3A0x22a56a8fc2345588!2sEnri%20car%20automotores!5e0!3m2!1ses-419!2sar!4v1778159134947!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+</body>
+</html>

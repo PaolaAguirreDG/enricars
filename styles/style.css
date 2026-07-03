@@ -1,0 +1,29 @@
+
+/* Estilos de header */
+
+header {
+    background-color: rgb(0, 0, 0);
+    color: rgb(215, 215, 215);
+}
+
+/* Ruta de especificidad */
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(215, 215, 215);
+}
+
+/* Estilos de main */
+
+main {
+    background-color: rgb(241, 241, 241);
+    color: rgb(25, 25, 25);
+}
+
+.tarjeta {
+    background-color: rgb(230, 230, 230);
+}
