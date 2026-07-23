@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/volante.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/iconos/icono-pestaña.png" type="image/x-icon">
     <!-- Css -->
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- Título -->
     <title>Enricars | Inicio</title>
-
 </head>
 <body>
     <!-- El cntenido del eencabezado de la pagina -->
@@ -17,82 +16,166 @@
         <div>
             <a href="#"><img src="./assets/logoEnriCars.webp" alt=""></a>
         </div>
-        <!-- Titulo principal del sitio -->
-        <h1>EnriCars | Automotores</h1>
-        <p>Venta de automoviles</p>
         <!-- El centro de navegación PRINCIPAL de una pagina. Es decir su menu de navegacion -->
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/quienessomos.html">Quienes somos</a></li>
-                <li><a href="./pages/preguntasfrecuentes.html">Preguntas frecuentes</a></li>
+                <li><a href="./pages/catalogo.html">Catálogo</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/servicios.html">Servicios</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
+
     <!-- Contenido especifico y principal del archivo -->
     <main>
+
+        <!-- Carrusel de presentación -->
+         
         <div>
-            <img src="./assets/banner01.jpg" alt="Fila de autos estacionados en un parking, donde todos son de colores neutros excepto uno rojo que destaca en el centro de la imagen." width="100%">
+            <!-- Titulo principal del sitio -->
+            <h1>Encuentra el auto de tus sueños</h1>
+            <p>
+                La mejor selección de vehiculos 
+                nuevos y usados con garantía de calidad.
+            </p>
+            <img src="./assets/banner01_desktop.jpg" alt="Automóvil sedán azul." width="100%">
         </div>
+
         <!-- Separa en temas el contenido especifico de un articulo -->
+
+        <!-- VEHÍCULOS DESTACADOS -->
+
         <section>
-            <h2>Descubri lo nuevo</h2>
+            <div>
+                <h2>Vehículos Destacados</h2>
+                <p>Descubre nuestras mejores ofertas del mes</p>
+            </div>
+
             <!-- Encierra estrcturas de codigo que tienden a repetirse en un archivo -->
-            <article class="tarjeta">
-                <img src="./assets/auto001.jpg" alt="Tiggo gris">
-                <h3>4x4 negra</h3>
-                <p>$100.000</p>
-                <button>Comprar</button>
+
+            <article class="tarjetaProducto">
+                <img src="./assets/productos/auto001.jpg" alt="Volkswagen Amarok V6">
+                <h3>Volkswagen Amarok V6</h3>
+                <p>2021</p>
+                <h4>$50.000.000</h4>
+                <p>[4x4] [Automática] [V6 TDI]</p>
+                <button>Contactar</button>
+                <button>Ver detalles</button>
             </article>
-            <article class="tarjeta">
-                <img src="./assets/auto002.jpg" alt="Chevrolet rojo">
-                <h3>Utilitario gris</h3>
-                <p>$100.000</p>
-                <button>Comprar</button>
+
+            <article class="tarjetaProducto">
+                <img src="./assets/productos/auto002.jpg" alt="Peugeot Partner Furgón">
+                <h3>Peugeot Partner Furgón</h3>
+                <p>2017</p>
+                <h4>$17.000.000</h4>
+                <p>[1.6 HDi] [Manual] [Diésel]</p>
+                <button>Contactar</button>
+                <button>Ver detalles</button>
             </article>
-            <article class="tarjeta">
-                <img src="./assets/auto003.jpg" alt="Chevrolet azul">
-                <h3>Auto rojo</h3>
-                <p>$100.000</p>
-                <button>Comprar</button>
-            </article>
-            <article class="tarjeta">
-                <img src="./assets/auto004.jpg" alt="Basalt azul">
-                <h3>Camioneta gris</h3>
-                <p>$100.000</p>
-                <button>Comprar</button>
+
+            <article class="tarjetaProducto">
+                <img src="./assets/productos/auto003.jpg" alt="Toyota Corolla XEI">
+                <h3>Toyota Corolla XEI</h3>
+                <p>2023</p>
+                <h4>$33.000.000</h4>
+                <p>[CVT] [2.0] [Nafta]</p>
+                <button>Contactar</button>
+                <button>Ver detalles</button>
             </article>
         </section>
+
         <section>
-            <h2>Ofertas</h2>
-            <p>Beneficio de transferencia al 50%</p>
+            <button>Ver todo el cátalogo</button>
         </section>
+
+        <!-- BENEFICIOS -->
+
         <section>
-            <h2>Recien llegado</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/oFQU4B28bJI?si=zqtUkLqsITaxfheP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>        
+            <h2>¿Por qué elegirnos?</h2>
+            <p>Beneficios que nos hacen únicos</p>
+
+            <article>
+                <img src="./assets/iconos/shield-badge.png" alt="">
+                <h3>Garantía</h3>
+                <p>Todos nuestros vehículos incluyen garantía.</p>
+            </article>
+
+            <article>
+                <img src="./assets/iconos/sign.png" alt="">
+                <h3>Financiación</h3>
+                <p>Planes de pago con las mejores tasas del mercado.</p>
+            </article>
+
+            <article>
+                <img src="./assets/iconos/call-center.png" alt="">
+                <h3>Atención</h3>
+                <p>Asesoramiento personalizado.</p>
+            </article>
+
+            <article>
+                <img src="./assets/iconos/wrench.png" alt="">
+                <h3>Servicio Post-Venta</h3>
+                <p>Trabajamos con talleres especializados.</p>
+            </article>
+        </section>
+        
+        <section>
+            <h2>¿Listo para tu próximo auto?</h2>
+            <p>
+
+                Nuestros asesores están listos para ayudarte
+                a encontrar el vehículo perfecto.
+
+            </p>
+             <button>Ver todo el cátalogo</button>
+        </section>
     </main>
+
     <!-- Contenido del pie de pagina -->
+
     <footer>
-        <p>Enricars | Automotores</p>
+        <img src="./assets/logoEnriCarsFooter.webp" alt="">
+        <p>
+
+        Tu concesionaria de confianza.
+        Vehículos de calidad al mejor precio.
+
+        </p>
+
+        <h3>Enlaces</h3>
         <ul>
             <li><a href="#">Inicio</a></li>
-            <li><a href="./pages/productos.html">Productos</a></li>
-            <li><a href="./pages/quienessomos.html">Quienes somos</a></li>
-            <li><a href="./pages/preguntasfrecuentes.html">Preguntas frecuentes</a></li>
+            <li><a href="./pages/catalogo.html">Catálogo</a></li>
+            <li><a href="./pages/nosotros.html">Nosotros</a></li>
+            <li><a href="./pages/servicios.html">Servicios</a></li>
             <li><a href="./pages/contacto.html">Contacto</a></li>
         </ul>
+
         <form action="">
             <label for="mailnewsletter">Suscribite al newsletter para recibir más novedades</label>
             <input type="email" name="mailnewsletter" id="mailnewsletter" placeholder="Dejanos tu mail">
             <input type="submit" value="Suscribirse">            
         </form>
+
+        <h3>Contacto</h3>
+        <img src="./assets/iconos/ubicacion.png" alt="">
+        <p>Av. Brig. Gral. Juan Manuel de Rosas 8396 | Isidro Casanova - Baunos Aires</p>
+        <img src="./assets/iconos/telefono.png" alt="">
+        <p>+54 11 6150-5425 | +54 11 5179-3571</p>
+
         <div>
-            <img src="./assets/logotipo-de-instagram.png" alt="Logotipo de instagram">
+            <h3>Séguinos</h3>
+            <img src="./assets/iconos/facebook.png" alt="facebook">
+            <img src="./assets/iconos/instagram.png" alt="instagram">
+
         </div>
-        <a href="#arriba">Ir arriba</a>  
+
+        <div>
+            <a class="arriba" href="#arriba">Ir arriba</a>
+        </div>
+        © 2026 EnriCars. Todos los derechos reservados. 
     </footer>
 </body>
 </html>

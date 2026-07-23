@@ -1,0 +1,75 @@
+/* Tipografía */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* font-family: "Inter", sans-serif; */
+
+/* --------------------------------- */
+
+/* Regla css font-face */
+
+@font-face {
+    font-family: decorativa;
+    src: url(../font/sporty-pro-regular-condensed.otf);
+}
+
+/* Estilos generales */
+
+body {
+font-family: "Inter", sans-serif;
+}
+
+/* Estilos de header */
+
+header, footer {
+    background-color: rgb(23, 23, 23);
+    color: white;
+}
+
+header {
+    font-size: 1rem;
+}
+
+ /* Solo el px es absoluto, rem es igual a 16 px */
+
+/* Ruta de especificidad */
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos de main */
+
+main {
+    background-color: rgb(237,237,237);
+    color: rgb(23, 23, 23);
+}
+
+.tarjetaProducto {
+    background-color: rgb(126, 126, 126);
+}
+
+.tarjetaProducto h3 {
+    font-size: 1.2rem;
+}
+
+/* Estilos de footer */
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.arriba {
+    color: rgb(219, 0, 56);
+    text-decoration: none;
+}
