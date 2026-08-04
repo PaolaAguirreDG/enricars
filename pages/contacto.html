@@ -3,118 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Css -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Enricars | Contacto</title>
 </head>
 <body>
     <header id="arriba">
-        <!-- Logo Enri Cars -->
-        <div>
-            <a href="#"><img src="../assets/logoEnriCars.webp" alt=""></a>
-        </div>
+        <nav class="navbar navbar-expand-lg w-100 fondoNav" data-bs-theme="dark">
+            <div class="container mx-4">
 
-        <!-- El centro de navegación PRINCIPAL de una pagina. Es decir su menu de navegacion -->
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./catalogo.html">Catálogo</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/logoEnriCars.svg"
+                        alt="EnriCars Automotores"
+                        class="logoHeader">
+                </a>
+
+                <!-- Botón hamburguesa -->
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Abrir menú">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <!-- Menú -->
+                <div class="collapse navbar-collapse justify-content-end"
+                    id="navbarSupportedContent">
+
+                    <ul class="navbar-nav align-items-lg-center me-lg-4">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./catalogo.html">Catálogo</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Contacto</a>
+                        </li>
+
+                    </ul>
+
+                    <button class="btn btnSell">
+                        Vender mi auto
+                    </button>
+
+                </div>
+
+            </div>
         </nav>
     </header>
     <main>
+
+        <!-- Banner de sección -->
         <section>
-            <h2>Contactanos</h2>
-            <form>
-                <fieldset>
-                    <legend>Tus datos</legend>
-
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                    
-                    <label for="email">Mail</label>
-                    <input type="email" id="contrasena" name="email" required>
-                </fieldset>
-                <fieldset>
-                    <legend>Cual es tu consulta</legend>
-                    <p>Selecciona el curso que deseas:</p>
-
-                    <input type="radio" id="curso-barista" name="curso_descarga" value="curso_barista" required>
-                    <label for="curso-barista">Curso de barista</label>
-
-                    <input type="radio" id="curso-pasteleria" name="curso_descarga" value="curso_pasteleria">
-                    <label for="curso-pasteleria">Curso de pastelería</label>
-
-                    <input type="radio" id="curso-cata" name="curso_descarga" value="curso_cata">
-                    <label for="curso-cata">Curso de cata</label>
-
-                    <button type="submit" name="accion" value="descargar">Inscribirme</button>
-
-                    <input type="checkbox" id="suscripcion" name="suscripcion">
-                    <label for="suscripcion">Deseo recibir noticias por correo</label>
-                </fieldset>
-                <fieldset>
-                    <legend>Comentarios</legend>
-
-                    <label for="comentarios">Dejanos tu mensaje o consulta:</label>
-                    <textarea id="comentarios" name="comentarios" rows="5" cols="40"
-                        placeholder="Escribe tus comentarios aquí"></textarea>
-
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Borrar</button>
-
-                </fieldset>
-            </form>
-            
+            <div class="bannerSeccion">
+                <h1>Contacto</h1>
+                <p>Estamos aquí para ayudarte. Escribinos y te responderemos a la brevedad</p>
+            </div>
         </section>
+
+         <!-- Medios de contacto -->
         <section>
-            <h2>Donde estamos</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.559170922213!2d-58.59558628814647!3d-34.71629717280107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc77f0f1d2e4b%3A0x22a56a8fc2345588!2sEnri%20car%20automotores!5e0!3m2!1ses-419!2sar!4v1778159134947!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <article>
+                <img src="../assets/iconos/maps-and-flags.png" alt="">
+                <h3>Dirección</h3>
+                <p>Av. Principal 1234</p>
+                <p>Buenos Aires, Argentina</p>
+                <p>CP 1425</p>
+            </article>
+
+            <article>
+                <img src="../assets/iconos/telephone.png" alt="">
+                <h3>Teléfonos</h3>
+                <p>+54 11 1234-5678</p>
+                <p>+54 11 8765-4321</p>
+                <p>WhatsApp +54 9 11 1234-5678</p>
+            </article>
+
+            <article>
+                <img src="../assets/iconos/mail-contact.png" alt="">
+                <h3>Mail</h3>
+                <p>info@ericars.com</p>
+                <p>ventas@ericars.com</p>
+                <p>soporte@ericars.com</p>
+            </article>
+
+            <article>
+                <img src="../assets/iconos/clock.png" alt="">
+                <h3>Horarios</h3>
+                <p>Lunes a Viernes: 9:00 - 19:00</p>
+                <p>Sábados: 9:00 - 14:00</p>
+                <p>Domingos: Cerrado</p>
+            </article>
+
+        </section>
+
+        <!-- Contacto + ubicación -->
+
+        <section>
+
+            <!-- Formulario de contacto -->
+            <div>
+                <h2>Envíanos un Mensaje</h2>
+
+                <form action="#" method="POST">
+                
+                    <!-- Nombre -->
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+
+                    <!-- Email + telefono -->
+
+                    <div class="fila">
+                        <div class="campo">
+                            <label for="email">Correo electrónico *</label>
+                            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                        </div>
+                        <div class="campo">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+54 11 1234-5678">
+                        </div>
+                    </div>
+
+                    <!-- Asunto -->
+                    <div class="form-group">
+                        <label for="asunto">Asunto *</label>
+                        <input type="text" id="asunto" name="asunto" placeholder="Motivo de tu mensaje" required>
+                    </div>
+
+                    <!-- Mensaje -->
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+
+                    <!-- Botón de Envío -->
+                    <button type="submit" class="btn-submit">Enviar mensaje</button>
+                </form>            
+            </div>
+
+            <div>
+                <h2>Donde estamos</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.559170922213!2d-58.59558628814647!3d-34.71629717280107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc77f0f1d2e4b%3A0x22a56a8fc2345588!2sEnri%20car%20automotores!5e0!3m2!1ses-419!2sar!4v1778159134947!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
     </main>
     <footer>
-        <img src="../assets/logoEnriCarsFooter.webp" alt="">
-        <p>
 
-        Tu concesionaria de confianza.
-        Vehículos de calidad al mejor precio.
+        <div class="containerFooter"> 
+            
+            <!-- Logo y descripción -->
+            <div>
+                <img src="../assets/logoEnriCars.svg" alt="Enricar Automotores" class="logoFooter">
+                <p>
+                Tu concesionaria de confianza. <br>
+                Vehículos de calidad al mejor precio.
+                </p>
+            </div>
 
-        </p>
+            <!-- Enlaces rápidos -->
+            <div class="linksFooter">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./catalogo.html">Catálogo</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
 
-        <h3>Enlaces</h3>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./catalogo.html">Catálogo</a></li>
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="./servicios.html">Servicios</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
+            <!-- Contacto -->
+            <div>
+                <h3>Contacto</h3>
+                <div class="itemContacto">
+                    <img src="../assets/iconos/ubicacion.svg" alt="" class="iconosContacto">
+                    <p>Av. Brig. Gral. Juan Manuel de Rosas 8396 <br> Isidro Casanova - Buenos Aires</p>
+                </div>
+                <div class="itemContacto">
+                    <img src="../assets/iconos/telefono.svg" alt="" class="iconosContacto">
+                    <p>+54 11 6150-5425 | +54 11 5179-3571</p>
+                </div>
+            </div>
 
-        <form action="">
-            <label for="mailnewsletter">Suscribite al newsletter para recibir más novedades</label>
-            <input type="email" name="mailnewsletter" id="mailnewsletter" placeholder="Dejanos tu mail">
-            <input type="submit" value="Suscribirse">            
-        </form>
+            <!-- Redes + horario de atención-->
+            <div>
+                <h3>Séguinos</h3>
 
-        <h3>Contacto</h3>
-        <img src="../assets/iconos/ubicacion.png" alt="">
-        <p>Av. Brig. Gral. Juan Manuel de Rosas 8396 | Isidro Casanova - Baunos Aires</p>
-        <img src="../assets/iconos/telefono.png" alt="">
-        <p>+54 11 6150-5425 | +54 11 5179-3571</p>
+                <div class="redesSociales">
 
-        <div>
-            <h3>Séguinos</h3>
-            <img src="../assets/iconos/facebook.png" alt="facebook">
-            <img src="../assets/iconos/instagram.png" alt="instagram">
+                    <a href="https://www.facebook.com/Enri.CarsAutomotores"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="iconoRedes"
+                    aria-label="Facebook">
+
+                        <!-- Pegá aquí el SVG de Facebook -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                            <path d="M200,100c0,55.23-44.77,100-100,100h0C44.77,200,0,155.23,0,100h0C0,44.77,44.77,0,100,0h0c55.23,0,100,44.77,100,100h0Z" fill="currentColor"/>
+
+                            <path d="M129.97,92.49l-1.44,11.56c-.24,1.93-1.88,3.38-3.82,3.38h-18.72v48.32c-1.98.18-3.97.27-6,.27-4.52,0-8.94-.46-13.2-1.31v-47.28h-14.39c-1.32,0-2.4-1.08-2.4-2.41v-14.46c0-1.32,1.08-2.41,2.4-2.41h14.39v-21.69c0-13.31,10.75-24.1,24-24.1h16.8c1.32,0,2.4,1.08,2.4,2.41v14.46c0,1.32-1.08,2.41-2.4,2.41h-12c-5.3,0-9.6,4.32-9.6,9.64v16.87h20.16c2.31,0,4.1,2.04,3.82,4.34h0Z" fill="#fff"/>
+                        </svg>
+
+                    </a>
+
+                    <a href="https://www.instagram.com/enricarsautomotores/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="iconoRedes"
+                    aria-label="Instagram">
+
+                        <!-- Pegá aquí el SVG de Instagram -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+
+                            <path fill="currentColor"
+                                d="M200,100c0,55.23-44.77,100-100,100S0,155.23,0,100,44.77,0,100,0s100,44.77,100,100Z"/>
+
+                            <path fill="#FFFFFF"
+                                d="M128.67,44.57h-57.34c-14.77,0-26.76,11.98-26.76,26.76v57.34c0,14.77,11.98,26.76,26.76,26.76h57.34c14.77,0,26.76-11.98,26.76-26.76v-57.34c0-14.77-11.98-26.76-26.76-26.76ZM145.87,126.76c0,10.55-8.56,19.11-19.11,19.11h-53.52c-10.55,0-19.11-8.56-19.11-19.11v-53.52c0-10.55,8.56-19.11,19.11-19.11h53.52c10.55,0,19.11,8.56,19.11,19.11v53.52Z"/>
+
+                            <path fill="#FFFFFF"
+                                d="M100.05,71.33c-15.83,0-28.67,12.84-28.67,28.67s12.84,28.67,28.67,28.67,28.67-12.84,28.67-28.67-12.84-28.67-28.67-28.67ZM100.05,119.11c-10.53,0-19.11-8.58-19.11-19.11s8.58-19.11,19.11-19.11,19.11,8.58,19.11,19.11-8.58,19.11-19.11,19.11Z"/>
+
+                            <circle cx="130.64" cy="69.42" r="5.73" fill="#FFFFFF"/>
+
+                        </svg>
+
+                    </a>
+
+                </div>
+
+                <p>Horario de atención: <br>
+                   Lun - Vie: 9:00 - 19:00 <br>
+                   Sáb: 9:00 - 14:00</p>                
+            </div>
 
         </div>
 
-        <a href="#arriba">Ir arriba</a> 
+        <!-- BOTON ARRIBA -->
+        <div class="textRight">
+            <a class="arriba" href="#arriba">↑</a>
+        </div>
+
+        <hr class="separador">
         
-        © 2026 EnriCars. Todos los derechos reservados. 
+        <div class="textCenter">
+            © 2026 EnriCars. Todos los derechos reservados. 
+        </div>
+
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>

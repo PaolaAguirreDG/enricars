@@ -4,178 +4,473 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/iconos/icono-pestaña.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Css -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Título -->
     <title>Enricars | Inicio</title>
 </head>
+
 <body>
+    
     <!-- El cntenido del eencabezado de la pagina -->
+
     <header id="arriba">
-        <!-- Logo Enri Cars -->
-        <div>
-            <a href="#"><img src="./assets/logoEnriCars.webp" alt=""></a>
-        </div>
+
         <!-- El centro de navegación PRINCIPAL de una pagina. Es decir su menu de navegacion -->
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/catalogo.html">Catálogo</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/servicios.html">Servicios</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+
+        <nav class="navbar navbar-expand-lg w-100 fondoNav" data-bs-theme="dark">
+            <div class="container mx-4">
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/logoEnriCars.svg"
+                        alt="EnriCars Automotores"
+                        class="logoHeader">
+                </a>
+
+                <!-- Botón hamburguesa -->
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Abrir menú">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <!-- Menú -->
+                <div class="collapse navbar-collapse justify-content-end"
+                    id="navbarSupportedContent">
+
+                    <ul class="navbar-nav align-items-lg-center me-lg-4">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/catalogo.html">Catálogo</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+
+                    <button class="btn btnSell">
+                        Vender mi auto
+                    </button>
+
+                </div>
+
+            </div>
         </nav>
     </header>
-
-    <!-- Contenido especifico y principal del archivo -->
+    
     <main>
+        <!-- Hero -->
+        <section class="hero">
 
-        <!-- Carrusel de presentación -->
-         
-        <div>
-            <!-- Titulo principal del sitio -->
-            <h1>Encuentra el auto de tus sueños</h1>
-            <p>
-                La mejor selección de vehiculos 
-                nuevos y usados con garantía de calidad.
-            </p>
-            <img src="./assets/banner01_desktop.jpg" alt="Automóvil sedán azul." width="100%">
-        </div>
+            <div class="heroContent">
 
-        <!-- Separa en temas el contenido especifico de un articulo -->
+                <h1>Encuentra el auto de<br>tus Sueños</h1>
+                <p>
+                    La mejor selección de vehículos
+                    nuevos y usados con garantía de calidad
+                </p>
+
+                <div class="heroButtons">
+                    <a href="#" class="btn btnPrimary">
+                        Ver Catálogo
+                        <span>→</span>
+                    </a>
+
+                    <a href="#" class="btn btnSecondary">
+                        Contactar Asesor
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
 
         <!-- VEHÍCULOS DESTACADOS -->
 
-        <section>
-            <div>
-                <h2>Vehículos Destacados</h2>
-                <p>Descubre nuestras mejores ofertas del mes</p>
+        <section class="featuredCars">
+
+            <div class=".wrapper">
+
+                <div class="sectionTitles">
+                    <h2>Vehículos destacados</h2>
+                    <p>Descubre nuestras mejores ofertas</p>
+                </div>
+
+                <div class="carsGrid">
+
+                    <!-- Card 1 -->
+                    <article class="carsCard">
+
+                        <div class="carsImage">
+                            <img src="./assets/productos/auto001.webp" alt="Volkswagen Amarok V6">
+                            <span class="carsYear">2021</span>
+                        </div>
+
+                        <div class="carsContent">
+
+                            <h3>Volkswagen Amarok V6</h3>
+
+                            <p class="carsPrice">$50.000.000</p>
+
+                            <div class="carsTags">
+                                <span>4x4</span>
+                                <span>Automática</span>
+                                <span>V6 TDI</span>
+                            </div>
+
+                            <div class="carsButtons">
+                                <a href="#" class="btn btnPrimary">Consultar</a>
+
+                                <a href="#" class="btn btnInfo">Detalles</a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                    
+                    <!-- Card 2 -->
+                    <article class="carsCard">
+
+                        <div class="carsImage">
+                            <img src="./assets/productos/auto002.webp" alt="Peugeot Partner Furgón">
+                            <span class="carsYear">2017</span>
+                        </div>
+
+                        <div class="carsContent">
+
+                            <h3>Peugeot Partner Furgón</h3>
+
+                            <p class="carsPrice">$17.000.000</p>
+
+                            <div class="carsTags">
+                                <span>1.6 HDI</span>
+                                <span>Manual</span>
+                                <span>Diésel</span>
+                            </div>
+
+                            <div class="carsButtons">
+                                <a href="#" class="btn btnPrimary">Consultar</a>
+
+                                <a href="#" class="btn btnInfo">Detalles</a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                    
+                    <!-- Card 3 -->
+                    <article class="carsCard">
+
+                        <div class="carsImage">
+                            <img src="./assets/productos/auto003.webp" alt="Toyota Corolla XEI">
+                            <span class="carsYear">2023</span>
+                        </div>
+
+                        <div class="carsContent">
+
+                            <h3>Toyota Corolla XEI</h3>
+
+                            <p class="carsPrice">$33.000.000</p>
+
+                            <div class="carsTags">
+                                <span>CVT</span>
+                                <span>2.0</span>
+                                <span>Nafta</span>
+                            </div>
+
+                            <div class="carsButtons">
+                                <a href="#" class="btn btnPrimary">Consultar</a>
+
+                                <a href="#" class="btn btnInfo">Detalles</a>
+
+                            </div>
+
+                        </div>
+
+                    </article>          
+
+
+
+                </div>
+
+                <div class="ctaContainer">
+                    <a href="./pages/catalogo.html" class="btn btnPrimary">
+                        Ver todo el Catálogo
+                        <span>→</span>
+                    </a>
+                </div>
             </div>
 
-            <!-- Encierra estrcturas de codigo que tienden a repetirse en un archivo -->
-
-            <article class="tarjetaProducto">
-                <img src="./assets/productos/auto001.jpg" alt="Volkswagen Amarok V6">
-                <h3>Volkswagen Amarok V6</h3>
-                <p>2021</p>
-                <h4>$50.000.000</h4>
-                <p>[4x4] [Automática] [V6 TDI]</p>
-                <button>Contactar</button>
-                <button>Ver detalles</button>
-            </article>
-
-            <article class="tarjetaProducto">
-                <img src="./assets/productos/auto002.jpg" alt="Peugeot Partner Furgón">
-                <h3>Peugeot Partner Furgón</h3>
-                <p>2017</p>
-                <h4>$17.000.000</h4>
-                <p>[1.6 HDi] [Manual] [Diésel]</p>
-                <button>Contactar</button>
-                <button>Ver detalles</button>
-            </article>
-
-            <article class="tarjetaProducto">
-                <img src="./assets/productos/auto003.jpg" alt="Toyota Corolla XEI">
-                <h3>Toyota Corolla XEI</h3>
-                <p>2023</p>
-                <h4>$33.000.000</h4>
-                <p>[CVT] [2.0] [Nafta]</p>
-                <button>Contactar</button>
-                <button>Ver detalles</button>
-            </article>
-        </section>
-
-        <section>
-            <button>Ver todo el cátalogo</button>
+            
         </section>
 
         <!-- BENEFICIOS -->
 
-        <section>
-            <h2>¿Por qué elegirnos?</h2>
-            <p>Beneficios que nos hacen únicos</p>
+        <section class="bonus">
 
-            <article>
-                <img src="./assets/iconos/shield-badge.png" alt="">
-                <h3>Garantía</h3>
-                <p>Todos nuestros vehículos incluyen garantía.</p>
-            </article>
+            <div class="wrapper">
 
-            <article>
-                <img src="./assets/iconos/sign.png" alt="">
-                <h3>Financiación</h3>
-                <p>Planes de pago con las mejores tasas del mercado.</p>
-            </article>
+                <div class="sectionTitles">
+                    <h2>¿Por qué elegirnos?</h2>
+                    <p>Beneficios que nos hacen únicos</p>
+                </div>
 
-            <article>
-                <img src="./assets/iconos/call-center.png" alt="">
-                <h3>Atención</h3>
-                <p>Asesoramiento personalizado.</p>
-            </article>
+                <div class="bonusGrid">
 
-            <article>
-                <img src="./assets/iconos/wrench.png" alt="">
-                <h3>Servicio Post-Venta</h3>
-                <p>Trabajamos con talleres especializados.</p>
-            </article>
+                    <!-- Bonus 1 -->
+
+                    <article class="bonusCard">
+
+                        <div class="bonusImage">
+
+                            <img src="./assets/iconos/shield-badge-1.png" alt="">
+
+                        </div>
+
+                        <div class="bonusContent">
+                            <h3>Garantía</h3>
+                            <p>Todos nuestros vehículos<br>incluyen garantía.</p>
+                        </div>
+
+                    </article>
+
+                    <!-- Bonus 2 -->
+                    <article class="bonusCard">
+
+                        <div class="bonusImage">
+                            <img src="./assets/iconos/sign-1.png" alt="">
+                        </div>
+
+                        <div class="bonusContent">
+                            <h3>Financiación</h3>
+                            <p>Planes de pago con<br>las mejores tasas del mercado.</p>
+                        </div>
+                    </article>
+
+                    <!-- Bonus 3 -->
+                    <article class="bonusCard">
+
+                        <div class="bonusImage">
+                            <img src="./assets/iconos/call-center-1.png" alt="">
+                        </div>
+
+                        <div class="bonusContent">
+                            <h3>Atención</h3>
+                            <p>Asesoramiento<br>personalizado.</p>
+                        </div>
+                    </article>
+
+                    <!-- Bonus 4 -->
+                    <article class="bonusCard">
+
+                        <div class="bonusImage">
+                            <img src="./assets/iconos/wrench-1.png" alt="">
+                        </div>
+
+                        <div class="bonusContent">
+                            <h3>Servicio Post-Venta</h3>
+                            <p>Trabajamos con<br>talleres especializados.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
         </section>
+
+        <!-- CTA -->
         
-        <section>
-            <h2>¿Listo para tu próximo auto?</h2>
-            <p>
+        <section class="cta">
 
-                Nuestros asesores están listos para ayudarte
-                a encontrar el vehículo perfecto.
+            <div class="wrapper">
 
-            </p>
-             <button>Ver todo el cátalogo</button>
+                <div class="sectionTitles">
+                    <h2>¿Listo para tu próximo auto?</h2>
+                    <p>
+
+                        Nuestros asesores están listos para ayudarte
+                        a encontrar el vehículo perfecto.
+
+                    </p>
+                </div>
+
+                <div class="ctaContainer">
+                    <a href="./pages/contacto.html" class="btn btnPrimary">
+                        Agenda una cita
+                        <span>→</span>
+                    </a>
+                </div>
+
+            </div>
         </section>
+
     </main>
 
-    <!-- Contenido del pie de pagina -->
-
     <footer>
-        <img src="./assets/logoEnriCarsFooter.webp" alt="">
-        <p>
 
-        Tu concesionaria de confianza.
-        Vehículos de calidad al mejor precio.
+        <div class="footerContainer">
+            
+                                    
+            <!-- Logo -->
+            <div class="footerColumn">
 
-        </p>
+                <a href="index.html">
+                    <img src="./assets/logoEnriCars.svg" alt="Enricars Automotores" class="footerLogo">        
+                </a>
+                <p class="footerDescription">
+                Tu concesionaria de confianza. <br>
+                Vehículos de calidad al mejor precio.
+                </p>
 
-        <h3>Enlaces</h3>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="./pages/catalogo.html">Catálogo</a></li>
-            <li><a href="./pages/nosotros.html">Nosotros</a></li>
-            <li><a href="./pages/servicios.html">Servicios</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
+            </div>
 
-        <form action="">
-            <label for="mailnewsletter">Suscribite al newsletter para recibir más novedades</label>
-            <input type="email" name="mailnewsletter" id="mailnewsletter" placeholder="Dejanos tu mail">
-            <input type="submit" value="Suscribirse">            
-        </form>
+            <!-- Links -->
 
-        <h3>Contacto</h3>
-        <img src="./assets/iconos/ubicacion.png" alt="">
-        <p>Av. Brig. Gral. Juan Manuel de Rosas 8396 | Isidro Casanova - Baunos Aires</p>
-        <img src="./assets/iconos/telefono.png" alt="">
-        <p>+54 11 6150-5425 | +54 11 5179-3571</p>
+            <div class="footerColumn">
 
-        <div>
-            <h3>Séguinos</h3>
-            <img src="./assets/iconos/facebook.png" alt="facebook">
-            <img src="./assets/iconos/instagram.png" alt="instagram">
+                <h3>Enlaces Rápidos</h3>
+
+                <ul class="footerLinks">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="./pages/catalogo.html">Catálogo</a></li>
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/servicios.html">Servicios</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Contacto -->
+            <div class="footerColumn">
+                
+                <h3>Contacto</h3>
+
+                <address class="footerContact">
+
+                    <ul>
+                        <li class="itemContact">
+
+                            <img src="./assets/iconos/ubicacion.svg" alt="" aria-hidden="true" class="iconContact">
+                            <a href="https://www.google.com/maps/place/Enri+car+automotores/@-34.7162971,-58.5978715,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcc77f0f1d2e4b:0x22a56a8fc2345588!8m2!3d-34.7162972!4d-58.593006!16s%2Fg%2F11mtfv_hv9?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                Av. Brig. Gral. Juan Manuel de Rosas 8396<br>
+                                Isidro Casanova - Buenos Aires</a>
+
+                        </li>
+
+                        <li class="itemContact">
+
+                            <img src="./assets/iconos/telefono.svg" alt="" aria-hidden="true" class="iconContact">
+
+                            <div>
+                            <a href="tel:+541161505425">+54 11 6150-5425</a><br>
+                            <a href="tel:+541151793571">+54 11 5179-3571</a>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </address>
+
+            </div>
+
+            <!-- Redes + horario de atención-->
+            <div class="footerColumn">
+                
+                <h3>Séguinos</h3>
+
+                <div class="footerSocial">
+
+                    <a href="https://www.facebook.com/Enri.CarsAutomotores"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="iconoRedes"
+                    aria-label="Facebook">
+
+                        <!-- SVG de Facebook -->
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                            <path d="M129.97,92.49l-1.44,11.56..."
+                            fill="#fff"/>
+                            <path d="M129.97,92.49l-1.44,11.56c-.24,1.93-1.88,3.38-3.82,3.38h-18.72v48.32c-1.98.18-3.97.27-6,.27-4.52,0-8.94-.46-13.2-1.31v-47.28h-14.39c-1.32,0-2.4-1.08-2.4-2.41v-14.46c0-1.32,1.08-2.41,2.4-2.41h14.39v-21.69c0-13.31,10.75-24.1,24-24.1h16.8c1.32,0,2.4,1.08,2.4,2.41v14.46c0,1.32-1.08,2.41-2.4,2.41h-12c-5.3,0-9.6,4.32-9.6,9.64v16.87h20.16c2.31,0,4.1,2.04,3.82,4.34h0Z" fill="#fff"/>
+                        </svg>
+
+                    </a>
+
+                    <a href="https://www.instagram.com/enricarsautomotores/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="iconoRedes"
+                    aria-label="Instagram">
+
+                        <!-- SVG de Instagram -->
+                         
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+
+                            <path d="M129.97,92.49l-1.44,11.56..."
+                            fill="#fff"/>
+                            <path fill="#FFFFFF"
+                                d="M128.67,44.57h-57.34c-14.77,0-26.76,11.98-26.76,26.76v57.34c0,14.77,11.98,26.76,26.76,26.76h57.34c14.77,0,26.76-11.98,26.76-26.76v-57.34c0-14.77-11.98-26.76-26.76-26.76ZM145.87,126.76c0,10.55-8.56,19.11-19.11,19.11h-53.52c-10.55,0-19.11-8.56-19.11-19.11v-53.52c0-10.55,8.56-19.11,19.11-19.11h53.52c10.55,0,19.11,8.56,19.11,19.11v53.52Z"/>
+
+                            <path fill="#FFFFFF"
+                                d="M100.05,71.33c-15.83,0-28.67,12.84-28.67,28.67s12.84,28.67,28.67,28.67,28.67-12.84,28.67-28.67-12.84-28.67-28.67-28.67ZM100.05,119.11c-10.53,0-19.11-8.58-19.11-19.11s8.58-19.11,19.11-19.11,19.11,8.58,19.11,19.11-8.58,19.11-19.11,19.11Z"/>
+
+                            <circle cx="130.64" cy="69.42" r="5.73" fill="#FFFFFF"/>
+
+                        </svg>
+
+                    </a>
+
+                </div>
+
+                <div class="footerHours">
+                    <p>Horario de atención:</p>
+                    <p>Lun - Vie: 9:00 - 19:00</p>
+                    <p>Sáb: 9:00 - 14:00</p>  
+                </div>
+
+            </div>
 
         </div>
 
-        <div>
-            <a class="arriba" href="#arriba">Ir arriba</a>
+        <!-- BOTON ARRIBA -->
+        <div class="upButton">
+            <a class="up" href="#arriba">↑</a>
         </div>
-        © 2026 EnriCars. Todos los derechos reservados. 
+        
+        <div class="footerBottom">
+            <p>© 2026 EnriCars. Todos los derechos reservados.</p>
+        </div>
+
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
