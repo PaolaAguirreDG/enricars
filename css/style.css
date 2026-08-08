@@ -51,7 +51,7 @@ hr{
 
 
 .wrapper {
-    width: 90%;
+    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -439,6 +439,118 @@ main {
     color: #b7b7b7;
 }
 
+/* ////// HERO PÁGINAS INTERNAS /////// */
+
+.heroInner {
+    background-color: #171717;
+    padding: 5rem 2rem;
+    text-align: center;
+    border-top: 1px solid #444444;
+}
+
+.heroContainer {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.heroTitle {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.6rem;
+}
+
+.heroText {
+    font-size: 1.5rem;
+    color: #b9b9b9;
+    line-height: 1.5;
+}
+
+/* ////// PÁGINAS CATÁLOGO /////// */
+
+.allCars {
+    padding: 40px 20px;
+    background-color: #ededed;
+}
+
+.vehicleType {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.badgeCars {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    border-radius: 3rem;
+    background-color: #d4d4d4;
+    color: #6e7682;
+    font-size: 1.7rem;
+    font-weight: 700;
+    gap: 1rem;
+}
+
+.badgeCars img {
+    height: 20px;
+    width: auto;
+}
+
+.showing {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #555555;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+.detailCard {
+    overflow: hidden;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 18px #17171732;
+    /* display:flex;
+    flex-direction:column; */
+}
+
+.carsType {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    padding: 7px 13px;
+
+    background-color: #22222288;
+    color: white;
+
+    border-radius: 20px;
+
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.carsSpecs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+    margin: 1.5rem 0 2.5rem 0;
+    /* margin-bottom: 2.5rem; */
+}
+
+.specItem{
+    display:flex;
+    align-items:center;
+    gap:.8rem;
+    font-size:1.5rem;
+    color:#555;
+}
+
+.specItem img{
+    width:18px;
+}
+
 /* ==========================
    FOOTER
 ========================== */
@@ -692,6 +804,27 @@ footer {
         padding: 60px 20px;
     }
 
+    /* Hero paginas internas */
+
+    .heroCatalogo {
+        padding: 4rem 2rem;
+    }
+
+    .heroTitle {
+        font-size: 4rem;
+    }
+
+    .heroText {
+        font-size: 1.8rem;
+    }
+
+    .allCars .carsGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+
+
     /* Footer */
 
     .footerContainer{
@@ -707,6 +840,7 @@ footer {
         width:48%;
 
     }
+
 
 
 
@@ -797,7 +931,7 @@ footer {
         font-size: 1.5rem;
     }
 
-        /* Sección vehiculos destacados */
+    /* Sección vehiculos destacados */
 
     .featuredCars {
         padding: 65px 100px;
@@ -845,6 +979,32 @@ footer {
         padding: 65px 0;
     }
 
+    /* Hero paginas internas */
+
+    .heroInner {
+        padding: 6rem 2rem;
+    }
+
+    .heroTitle {
+        font-size: 4.5rem;
+    }
+
+    .heroText {
+        font-size: 1.8rem;
+    }
+
+    /* Todos los vehículos */
+
+    .allCars {
+        padding: 50px 20px;
+        background-color: #ededed;
+    }
+
+    .allCars .carsGrid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+
     /* Footer */
 
     .footer{
@@ -866,7 +1026,6 @@ footer {
     .footerColumn:first-child{
         max-width:320px;
     }
-
 
 
 
