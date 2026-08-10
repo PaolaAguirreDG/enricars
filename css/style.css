@@ -619,11 +619,142 @@ main {
 
 /* ////// Servicios/////// */
 
+.services {
+    padding: 4rem 2rem;
+    background-color: #fafafa;
+}
+
+.serviceCard {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    background-color: #fff;
+    border: 1px solid #eeeeee;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 10px #17171714;  
+}
+
+.serviceIcon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.serviceIcon img {
+    width: 70px;
+    display: flex;
+    object-fit: cover;
+}
+
+.serviceContent h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.serviceContent p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.serviceContent ul {
+    margin: 0 0 2.5rem;
+    padding: 0;
+    list-style: none;
+}
+
+.serviceContent li {
+    font-size: 1.3rem;
+    position: relative;
+    padding-left: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.serviceContent li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+}
+
+/* ------ Rojo -------- */
+
+.red li::before {
+    background-color: #db0038;
+}
+
+/* ------ Verde -------- */
+
+.green li::before {
+    background-color: #00A63E;
+}
+
+.serviceCard.green .btnPrimary {
+    background-color: #00A63E;
+}
+
+.serviceCard.green .btnPrimary:hover {
+    background-color: #008f35;
+}
 
 
+/* ------ Violeta -------- */
 
+.purple li::before {
+    background-color: #9810FA;
+}
 
+.serviceCard.purple .btnPrimary {
+    background-color: #9810FA;
+}
 
+.serviceCard.purple .btnPrimary:hover {
+    background-color: #890fe0;
+}
+
+/* <!-- PROCESO DE COMPRA --> */
+
+.purchaseStep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Número */
+
+.stepNumber {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #fdebd3;
+}
+
+/* Título */
+
+.purchaseStep h3 {
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Descripción */
+
+.purchaseStep p {
+    max-width: 32rem;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #444444;
+}
 
 
 /* ==========================
@@ -901,7 +1032,6 @@ footer {
         height: 420px;
     }
 
-
     .historyContent h2 {
         font-size: 3rem;
     }
@@ -910,20 +1040,36 @@ footer {
         font-size: 1.5rem;
     }
 
+    /* Servicios */
+
+    .services {
+        padding: 5rem 4rem;
+    }
+
+    .servicesContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    /* Proceso de compra */
+
+    .stepNumber {
+        font-size: 5.5rem;
+    }
+
+
+
     /* Footer */
 
-    .footerContainer{
-
+    .footerContainer {
         flex-direction:row;
         flex-wrap:wrap;
         justify-content:space-between;
-
     }
 
-    .footerColumn{
-
+    .footerColumn {
         width: 48%;
-
     }
 
 
@@ -1048,7 +1194,7 @@ footer {
     }
 
     .bonus {
-        padding: 65px 0;
+        padding: 65px 30px;
     }
 
 
@@ -1146,6 +1292,48 @@ footer {
         line-height: 1.9;
         margin-bottom: 1.5rem;
     }
+
+    /* Servicios */
+
+    .services {
+        padding: 6rem 8rem;
+    }
+
+    .services .carsGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    .serviceCard {
+        padding: 4rem;
+
+    }
+
+    .serviceButton {
+        margin-top: auto;
+    }
+
+    /* Proceso de compra */
+
+    .purchaseStep {
+        flex: 1;
+    }
+
+    .stepNumber {
+        margin-bottom: 1.5rem;
+        font-size: 7rem;
+    }
+
+    .purchaseStep h3 {
+        font-size: 2.2rem;
+    }
+
+    .purchaseStep p {
+        max-width: 30rem;
+        font-size: 1.7rem;
+    }
+
 
 
     /* Footer */
