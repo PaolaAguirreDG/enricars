@@ -102,7 +102,7 @@ header {
     padding: 0.5rem 1rem;
 }
 .btn:hover {
-    background-color: #ae002f;
+    background-color: #ba0132;
     color: white;
 }
 
@@ -756,6 +756,187 @@ main {
     color: #444444;
 }
 
+/* =========================
+   CONTACTO
+========================= */
+
+.contactSection {
+    padding: 4rem 2rem;
+}
+
+
+/* Títulos */
+
+.contactSection h2 {
+    margin: 0 0 2.5rem;
+    color: #171717;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.contactForm {
+    width: 100%;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+}
+
+.formGroup label {
+    margin-bottom: 0.8rem;
+    color: #444444;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+    width: 100%;
+    border: 1px solid #d8dee5;
+    border-radius: 1rem;
+    background-color: #fff;
+    color: #444444;
+    font-family: inherit;
+    font-size: 1.6rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.formGroup input,
+.formGroup select {
+    height: 5.4rem;
+    padding: 0 1.6rem;
+}
+
+.formGroup select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6' fill='none' stroke='%23444444' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1.6rem center;
+    background-size: 1.6rem;
+}
+.formGroup textarea {
+    min-height: 18rem;
+    padding: 1.6rem;
+    resize: vertical;
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+    color: #9aa3ad;
+}
+
+
+/* Focus */
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+    border-color: #171717;
+}
+
+
+/* Email + teléfono */
+
+.formRow {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Botón */
+
+.contactForm .btnPrimary img {
+    height: 2rem;
+    width: auto;
+}
+
+
+/* Ubicación  */
+
+.contactLocation {
+    margin-top: 5rem;
+}
+
+.mapContainer {
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.12);
+}
+
+.mapContainer iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+
+/* =========================
+   TARJETA VISITANOS
+========================= */
+
+.visitCard {
+    margin-top: 2.5rem;
+    padding: 3rem 2rem;
+
+    border-radius: 1.5rem;
+
+    background-color: #eeeeee;
+}
+
+.visitCard h3 {
+    margin: 0 0 2rem;
+
+    color: #10253f;
+    font-size: 2.3rem;
+}
+
+.visitCard > p {
+    margin: 0 0 2rem;
+
+    color: #40546a;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.importantBox {
+    padding: 2rem;
+
+    border-radius: 1rem;
+
+    background-color: #fff;
+}
+
+.importantBox p {
+    margin: 0 0 1.5rem;
+
+    color: #40546a;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.importantBox strong {
+    color: #10253f;
+}
+
+.importantBox a {
+    color: #e9003d;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
 
 /* ==========================
    FOOTER
@@ -918,7 +1099,7 @@ footer {
 
 /* ============ MEDIA QUERY ============ */
 
-/* TABLET */
+/* ////////////// TABLET ////////////// */
 
 @media (min-width: 501px) and (max-width: 1023px) {
     
@@ -1058,6 +1239,33 @@ footer {
         font-size: 5.5rem;
     }
 
+    /* Contacto */
+
+    .contactSection {
+        padding: 6rem 4rem;
+    }
+
+    /*
+       Email y teléfono pasan
+       a estar uno al lado del otro
+    */
+    .formRow {
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+
+    .formRow .formGroup {
+        flex: 1;
+    }
+
+    .mapContainer {
+        height: 40rem;
+    }
+
+    .visitCard {
+        padding: 3.5rem;
+    }
+
 
 
     /* Footer */
@@ -1077,7 +1285,7 @@ footer {
 
 }
 
-/* DESKTOP */
+/* ///////// DESKTOP //////// */
 
 @media (min-width: 1024px) {
     
@@ -1088,7 +1296,7 @@ footer {
     }
 
     .fondoNav {
-        padding: 13px 0;
+        padding: 13px 20px;
     }
 
     .logoHeader{
@@ -1332,6 +1540,57 @@ footer {
     .purchaseStep p {
         max-width: 30rem;
         font-size: 1.7rem;
+    }
+
+    /* Contacto */
+
+        .contactSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+
+        padding: 6rem;
+    }
+
+
+    /* FORMULARIO */
+
+    .contactForm {
+        min-width: 0;
+    }
+
+
+    /* EMAIL + TELÉFONO */
+
+    .formRow {
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+
+    .formRow .formGroup {
+        flex: 1;
+    }
+
+
+    /* UBICACIÓN */
+
+    .contactLocation {
+        margin-top: 0;
+        min-width: 0;
+    }
+
+
+    /* MAPA */
+
+    .mapContainer {
+        height: 43rem;
+    }
+
+
+    /* TARJETA */
+
+    .visitCard {
+        padding: 3.5rem;
     }
 
 

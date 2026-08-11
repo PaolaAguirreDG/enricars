@@ -72,148 +72,227 @@
             </div>
         </nav>
     </header>
+
     <main>
 
-        <!-- Banner de sección -->
-        <section>
-            <div class="bannerSeccion">
-                <h1>Contacto</h1>
-                <p>Estamos aquí para ayudarte. Escribinos y te responderemos a la brevedad</p>
+        <!-- ENCABEZADO (paginas internas) -->
+
+        <section class="heroInner">
+
+            <div class="heroContainer">
+
+                <h1 class="heroTitle">Contacto</h1>
+
+                <p class="heroText">Estamos aquí para ayudarte. Escribinos y te responderemos a la brevedad</p>
+
             </div>
-        </section>
-
-         <!-- Medios de contacto -->
-        <section>
-
-            <article>
-                <img src="../assets/iconos/maps-and-flags.png" alt="">
-                <h3>Dirección</h3>
-                <p>Av. Principal 1234</p>
-                <p>Buenos Aires, Argentina</p>
-                <p>CP 1425</p>
-            </article>
-
-            <article>
-                <img src="../assets/iconos/telephone.png" alt="">
-                <h3>Teléfonos</h3>
-                <p>+54 11 1234-5678</p>
-                <p>+54 11 8765-4321</p>
-                <p>WhatsApp +54 9 11 1234-5678</p>
-            </article>
-
-            <article>
-                <img src="../assets/iconos/mail-contact.png" alt="">
-                <h3>Mail</h3>
-                <p>info@ericars.com</p>
-                <p>ventas@ericars.com</p>
-                <p>soporte@ericars.com</p>
-            </article>
-
-            <article>
-                <img src="../assets/iconos/clock.png" alt="">
-                <h3>Horarios</h3>
-                <p>Lunes a Viernes: 9:00 - 19:00</p>
-                <p>Sábados: 9:00 - 14:00</p>
-                <p>Domingos: Cerrado</p>
-            </article>
 
         </section>
 
         <!-- Contacto + ubicación -->
 
-        <section>
+        <section class="contactSection">
 
-            <!-- Formulario de contacto -->
-            <div>
+            <!-- FORMULARIO -->
+
+            <div class="contactForm">
+
                 <h2>Envíanos un Mensaje</h2>
 
-                <form action="#" method="POST">
-                
-                    <!-- Nombre -->
-                    <div class="form-group">
-                        <label for="nombre">Nombre completo *</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                <form action="#" method="post">
+
+                    <div class="formGroup">
+                        <label for="nombre">Nombre Completo *</label>
+                        <input 
+                            type="text" 
+                            id="nombre" 
+                            name="nombre"
+                            placeholder="Juan Pérez"
+                            required
+                        >
                     </div>
 
-                    <!-- Email + telefono -->
+                    <div class="formRow">
 
-                    <div class="fila">
-                        <div class="campo">
-                            <label for="email">Correo electrónico *</label>
-                            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                        <div class="formGroup">
+                            <label for="email">Email *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email"
+                                placeholder="juan@ejemplo.com"
+                                required
+                            >
                         </div>
-                        <div class="campo">
+
+                        <div class="formGroup">
                             <label for="telefono">Teléfono</label>
-                            <input type="tel" id="telefono" name="telefono" placeholder="+54 11 1234-5678">
+                            <input 
+                                type="tel" 
+                                id="telefono" 
+                                name="telefono"
+                                placeholder="+54 11 1234-5678"
+                            >
                         </div>
+
                     </div>
 
-                    <!-- Asunto -->
-                    <div class="form-group">
+                    <div class="formGroup">
                         <label for="asunto">Asunto *</label>
-                        <input type="text" id="asunto" name="asunto" placeholder="Motivo de tu mensaje" required>
+
+                        <select id="asunto" name="asunto" required>
+                            <option value="" selected disabled>
+                                Seleccionar asunto
+                            </option>
+                            <option value="consulta">Consulta general</option>
+                            <option value="vehiculo">Consulta por vehículo</option>
+                            <option value="test-drive">Prueba de manejo</option>
+                            <option value="financiacion">Financiación</option>
+                        </select>
                     </div>
 
-                    <!-- Mensaje -->
-                    <div class="form-group">
+                    <div class="formGroup">
                         <label for="mensaje">Mensaje *</label>
-                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                        <textarea 
+                            id="mensaje" 
+                            name="mensaje"
+                            placeholder="Escribe tu consulta aquí..."
+                            required
+                        ></textarea>
                     </div>
 
-                    <!-- Botón de Envío -->
-                    <button type="submit" class="btn-submit">Enviar mensaje</button>
-                </form>            
+                    <button type="submit" class="btn btnPrimary">
+                        <img src="../assets/iconos/send.svg" alt="" aria-hidden="true">
+                        <span>Enviar Mensaje</span>
+                    </button>
+                </form>
             </div>
 
-            <div>
-                <h2>Donde estamos</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.559170922213!2d-58.59558628814647!3d-34.71629717280107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc77f0f1d2e4b%3A0x22a56a8fc2345588!2sEnri%20car%20automotores!5e0!3m2!1ses-419!2sar!4v1778159134947!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- UBICACIÓN -->
+
+            <div class="contactLocation">
+
+                <h2>Ubicación</h2>
+
+                <div class="mapContainer">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.559170922213!2d-58.59558628814647!3d-34.71629717280107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc77f0f1d2e4b%3A0x22a56a8fc2345588!2sEnri%20car%20automotores!5e0!3m2!1ses-419!2sar!4v1778159134947!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+
+                <!-- VISITANOS -->
+                <div class="visitCard">
+
+                    <h3>¿Preferís visitarnos?</h3>
+
+                    <p>
+                        Te esperamos en nuestro showroom. Podés ver todos nuestros
+                        vehículos, realizar pruebas de manejo y hablar con nuestros
+                        asesores sin compromiso.
+                    </p>
+
+                    <div class="importantBox">
+
+                        <p>
+                            <strong>Importante:</strong>
+                            Para pruebas de manejo, 
+                            te recomendamos coordinar
+                            previamente una cita.
+                        </p>
+
+                        <a href="tel:+541161505425">
+                            ☎ Llamanos al +54 11 6150-5425
+                        </a>
+
+                    </div>
+
+                </div>
+
             </div>
+
         </section>
+
+
+
+
+
+
     </main>
+
     <footer>
 
-        <div class="containerFooter"> 
+        <div class="footerContainer">
             
-            <!-- Logo y descripción -->
-            <div>
-                <img src="../assets/logoEnriCars.svg" alt="Enricar Automotores" class="logoFooter">
-                <p>
+                                    
+            <!-- Logo -->
+            <div class="footerColumn">
+
+                <a href="index.html">
+                    <img src="../assets/logoEnriCars.svg" alt="Enricars Automotores" class="footerLogo">        
+                </a>
+                <p class="footerDescription">
                 Tu concesionaria de confianza. <br>
                 Vehículos de calidad al mejor precio.
                 </p>
+
             </div>
 
-            <!-- Enlaces rápidos -->
-            <div class="linksFooter">
-                <h3>Enlaces</h3>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
+            <!-- Links -->
+
+            <div class="footerColumn">
+
+                <h3>Enlaces Rápidos</h3>
+
+                <ul class="footerLinks">
+                    <li><a href="#">Inicio</a></li>
                     <li><a href="./catalogo.html">Catálogo</a></li>
                     <li><a href="./nosotros.html">Nosotros</a></li>
                     <li><a href="./servicios.html">Servicios</a></li>
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
+
             </div>
 
             <!-- Contacto -->
-            <div>
+            <div class="footerColumn">
+                
                 <h3>Contacto</h3>
-                <div class="itemContacto">
-                    <img src="../assets/iconos/ubicacion.svg" alt="" class="iconosContacto">
-                    <p>Av. Brig. Gral. Juan Manuel de Rosas 8396 <br> Isidro Casanova - Buenos Aires</p>
-                </div>
-                <div class="itemContacto">
-                    <img src="../assets/iconos/telefono.svg" alt="" class="iconosContacto">
-                    <p>+54 11 6150-5425 | +54 11 5179-3571</p>
-                </div>
+
+                <address class="footerContact">
+
+                    <ul>
+                        <li class="itemContact">
+
+                            <img src="../assets/iconos/ubicacion.svg" alt="" aria-hidden="true" class="iconContact">
+                            <a href="https://www.google.com/maps/place/Enri+car+automotores/@-34.7162971,-58.5978715,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcc77f0f1d2e4b:0x22a56a8fc2345588!8m2!3d-34.7162972!4d-58.593006!16s%2Fg%2F11mtfv_hv9?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                Av. Brig. Gral. Juan Manuel de Rosas 8396<br>
+                                Isidro Casanova - Buenos Aires</a>
+
+                        </li>
+
+                        <li class="itemContact">
+
+                            <img src="../assets/iconos/telefono.svg" alt="" aria-hidden="true" class="iconContact">
+
+                            <div>
+                            <a href="tel:+541161505425">+54 11 6150-5425</a><br>
+                            <a href="tel:+541151793571">+54 11 5179-3571</a>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </address>
+
             </div>
 
             <!-- Redes + horario de atención-->
-            <div>
+            <div class="footerColumn">
+                
                 <h3>Séguinos</h3>
 
-                <div class="redesSociales">
+                <div class="footerSocial">
 
                     <a href="https://www.facebook.com/Enri.CarsAutomotores"
                     target="_blank"
@@ -221,10 +300,11 @@
                     class="iconoRedes"
                     aria-label="Facebook">
 
-                        <!-- Pegá aquí el SVG de Facebook -->
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-                            <path d="M200,100c0,55.23-44.77,100-100,100h0C44.77,200,0,155.23,0,100h0C0,44.77,44.77,0,100,0h0c55.23,0,100,44.77,100,100h0Z" fill="currentColor"/>
+                        <!-- SVG de Facebook -->
 
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                            <path d="M129.97,92.49l-1.44,11.56..."
+                            fill="#fff"/>
                             <path d="M129.97,92.49l-1.44,11.56c-.24,1.93-1.88,3.38-3.82,3.38h-18.72v48.32c-1.98.18-3.97.27-6,.27-4.52,0-8.94-.46-13.2-1.31v-47.28h-14.39c-1.32,0-2.4-1.08-2.4-2.41v-14.46c0-1.32,1.08-2.41,2.4-2.41h14.39v-21.69c0-13.31,10.75-24.1,24-24.1h16.8c1.32,0,2.4,1.08,2.4,2.41v14.46c0,1.32-1.08,2.41-2.4,2.41h-12c-5.3,0-9.6,4.32-9.6,9.64v16.87h20.16c2.31,0,4.1,2.04,3.82,4.34h0Z" fill="#fff"/>
                         </svg>
 
@@ -236,12 +316,12 @@
                     class="iconoRedes"
                     aria-label="Instagram">
 
-                        <!-- Pegá aquí el SVG de Instagram -->
+                        <!-- SVG de Instagram -->
+                         
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
 
-                            <path fill="currentColor"
-                                d="M200,100c0,55.23-44.77,100-100,100S0,155.23,0,100,44.77,0,100,0s100,44.77,100,100Z"/>
-
+                            <path d="M129.97,92.49l-1.44,11.56..."
+                            fill="#fff"/>
                             <path fill="#FFFFFF"
                                 d="M128.67,44.57h-57.34c-14.77,0-26.76,11.98-26.76,26.76v57.34c0,14.77,11.98,26.76,26.76,26.76h57.34c14.77,0,26.76-11.98,26.76-26.76v-57.34c0-14.77-11.98-26.76-26.76-26.76ZM145.87,126.76c0,10.55-8.56,19.11-19.11,19.11h-53.52c-10.55,0-19.11-8.56-19.11-19.11v-53.52c0-10.55,8.56-19.11,19.11-19.11h53.52c10.55,0,19.11,8.56,19.11,19.11v53.52Z"/>
 
@@ -256,25 +336,27 @@
 
                 </div>
 
-                <p>Horario de atención: <br>
-                   Lun - Vie: 9:00 - 19:00 <br>
-                   Sáb: 9:00 - 14:00</p>                
+                <div class="footerHours">
+                    <p>Horario de atención:</p>
+                    <p>Lun - Vie: 9:00 - 19:00</p>
+                    <p>Sáb: 9:00 - 14:00</p>  
+                </div>
+
             </div>
 
         </div>
 
         <!-- BOTON ARRIBA -->
-        <div class="textRight">
-            <a class="arriba" href="#arriba">↑</a>
+        <div class="upButton">
+            <a class="up" href="#arriba">↑</a>
         </div>
-
-        <hr class="separador">
         
-        <div class="textCenter">
-            © 2026 EnriCars. Todos los derechos reservados. 
+        <div class="footerBottom">
+            <p>© 2026 EnriCars. Todos los derechos reservados.</p>
         </div>
 
     </footer>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
