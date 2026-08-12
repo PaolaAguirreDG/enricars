@@ -1,0 +1,87 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.services {
+    padding: 4rem 2rem;
+    background-color: $color-gray-subtle;
+
+    .carsGrid {
+        @include desktop {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+        }
+    }
+
+    @include tablet {
+        padding: 5rem 4rem;
+    }
+
+    @include desktop {
+        padding: 6rem 5rem;
+    }
+}
+
+.servicesContainer {
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+}
+
+.serviceButton {
+    @include desktop {
+        margin-top: auto;
+    }
+}
+
+.purchaseStep {
+    @include flex-column;
+    align-items: center;
+
+    h3 {
+        margin: 0 0 1rem;
+        font-size: 2rem;
+        font-weight: 700;
+
+        @include desktop {
+            font-size: 2.2rem;
+        }
+    }
+
+    p {
+        max-width: 32rem;
+        margin: 0;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        color: $color-gray-dark;
+
+        @include desktop {
+            max-width: 30rem;
+            font-size: 1.7rem;
+        }
+    }
+
+    @include desktop {
+        flex: 1;
+    }
+}
+
+.stepNumber {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+    color: $color-amber-light;
+
+    @include tablet {
+        font-size: 5.5rem;
+    }
+
+    @include desktop {
+        margin-bottom: 1.5rem;
+        font-size: 7rem;
+    }
+}

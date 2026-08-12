@@ -1,0 +1,300 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.carsCard, .detailCard {
+    overflow: hidden;
+    background-color: $color-white;
+    border-radius: 15px;
+    box-shadow: $shadow-card;
+}
+
+.carsImage {
+    position: relative;
+    width: 100%;
+    height: 220px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    @include desktop {
+        height: 260px;
+    }
+}
+
+.carsYear {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 7px 13px;
+    background-color: $color-primary;
+    color: $color-white;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.carsType {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 7px 13px;
+    background-color: rgba(34, 34, 34, 0.533);
+    color: $color-white;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.carsContent {
+    @include flex-column;
+    padding: 18px;
+
+    h3 {
+        margin: 0 0 6px;
+        color: $color-dark;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    @include desktop {
+        padding: 25px;
+    }
+}
+
+.carsPrice {
+    color: $color-primary;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.carsTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+
+    span {
+        padding: 2px 11px;
+        background-color: $color-gray-lighter;
+        color: $color-gray-tag;
+        border-radius: 20px;
+        font-size: 1.2rem;
+    }
+}
+
+.carsButtons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+
+    .btnPrimary {
+        flex: 3;
+        min-width: 0;
+    }
+}
+
+.carsSpecs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+    margin: 1.5rem 0 2.5rem 0;
+}
+
+.specItem {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.5rem;
+    color: $color-gray-text;
+
+    img {
+        width: 18px;
+    }
+}
+
+.bonusCard {
+    @include flex-column;
+    align-items: center;
+}
+
+.bonusImage {
+    width: 70px;
+    height: 70px;
+    @include flex-center;
+
+    img {
+        width: 70px;
+        display: flex;
+        object-fit: cover;
+    }
+}
+
+.bonusContent {
+    @include flex-column;
+    padding: 18px;
+
+    h3 {
+        justify-content: center;
+        color: $color-dark;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    p {
+        margin: 0;
+        color: $color-gray-dark;
+        font-size: 1.5rem;
+    }
+}
+
+.serviceCard {
+    @include flex-column;
+    padding: 2.5rem;
+    background-color: $color-white;
+    border: 1px solid $color-gray-border;
+    border-radius: 1.5rem;
+    box-shadow: $shadow-service;
+
+    @include desktop {
+        padding: 4rem;
+    }
+
+    &.green {
+        li::before {
+            background-color: $color-green;
+        }
+
+        .btnPrimary {
+            background-color: $color-green;
+
+            &:hover {
+                background-color: $color-green-hover;
+            }
+        }
+    }
+
+    &.purple {
+        li::before {
+            background-color: $color-purple;
+        }
+
+        .btnPrimary {
+            background-color: $color-purple;
+
+            &:hover {
+                background-color: $color-purple-hover;
+            }
+        }
+    }
+}
+
+.serviceIcon {
+    width: 70px;
+    height: 70px;
+    @include flex-center;
+
+    img {
+        width: 70px;
+        display: flex;
+        object-fit: cover;
+    }
+}
+
+.serviceContent {
+    h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+    }
+
+    ul {
+        margin: 0 0 2.5rem;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        font-size: 1.3rem;
+        position: relative;
+        padding-left: 1.7rem;
+        margin-bottom: 1rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.7rem;
+            width: 0.7rem;
+            height: 0.7rem;
+            border-radius: 50%;
+        }
+    }
+}
+
+.red li::before {
+    background-color: $color-primary;
+}
+
+.visitCard {
+    margin-top: 2.5rem;
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+    background-color: $color-gray-card-bg;
+
+    h3 {
+        margin: 0 0 2rem;
+        color: $color-gray-card-title;
+        font-size: 2.3rem;
+    }
+
+    > p {
+        margin: 0 0 2rem;
+        color: $color-gray-card-text;
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+
+    @include tablet {
+        padding: 3.5rem;
+    }
+
+    @include desktop {
+        padding: 3.5rem;
+    }
+}
+
+.importantBox {
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: $color-white;
+
+    p {
+        margin: 0 0 1.5rem;
+        color: $color-gray-card-text;
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    strong {
+        color: $color-gray-card-title;
+    }
+
+    a {
+        color: #e9003d;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,101 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+header {
+    background-color: $color-dark;
+    color: $color-white;
+    font-size: 1.5rem;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    @include desktop {
+        nav ul {
+            flex-direction: row;
+        }
+    }
+}
+
+.fondoNav {
+    background-color: $color-dark;
+    padding: 10px 0;
+
+    @include desktop {
+        padding: 13px 20px;
+    }
+}
+
+.logoHeader {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+
+    @include tablet {
+        width: 210px;
+    }
+
+    @include desktop {
+        width: 250px;
+        max-width: none;
+    }
+}
+
+.navbar {
+    .nav-link {
+        color: $color-white;
+        font-size: 1.5rem;
+        font-weight: 500;
+        transition: color .3s ease;
+
+        &:hover {
+            color: $color-gray-dark;
+        }
+
+        &.active {
+            color: $color-primary !important;
+            font-weight: 700;
+        }
+    }
+
+    @include desktop {
+        .container {
+            max-width: 1200px;
+            margin: 0 auto !important;
+        }
+    }
+}
+
+.navbar-toggler {
+    border-color: $color-dark;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.navbar-collapse {
+    @include desktop {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+.navbar-nav {
+    @include tablet {
+        margin: 2rem 0;
+    }
+
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 2rem 0 0;
+
+        .nav-item {
+            margin: 0.5rem;
+        }
+    }
+}

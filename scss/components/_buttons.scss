@@ -1,0 +1,94 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Placeholder selector para extender estilos compartidos
+%btn-base-style {
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+.btn {
+    @include flex-center;
+    min-height: 45px;
+    padding: 0 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+
+    &:hover {
+        background-color: $color-primary-hover;
+        color: $color-white;
+    }
+
+    @include tablet {
+        min-width: 220px;
+    }
+
+    @include desktop {
+        min-width: 200px;
+        min-height: 45px;
+        font-size: 1.5rem;
+    }
+}
+
+.btnPrimary {
+    @extend %btn-base-style;
+
+    span {
+        margin-left: 15px;
+        font-size: 1.5rem;
+    }
+
+    &:hover {
+        background-color: $color-primary-dark;
+    }
+
+    img {
+        height: 2rem;
+        width: auto;
+    }
+}
+
+.btnSecondary {
+    border: 2px solid $color-white;
+    color: $color-white;
+    background-color: transparent;
+
+    &:hover {
+        border: 2px solid $color-white;
+        background-color: rgba(255, 255, 255, 0.176);
+        color: $color-white;
+    }
+}
+
+.btnSell {
+    @extend %btn-base-style;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+
+    @include tablet {
+        width: 220px;
+    }
+
+    @include desktop {
+        margin: 0;
+    }
+}
+
+.btnInfo {
+    flex: 1;
+    min-width: 0;
+    border: 2px solid $color-primary;
+    color: $color-primary;
+    background-color: transparent;
+
+    &:hover {
+        border: 2px solid $color-primary;
+        background-color: rgba(235, 0, 55, 0.043);
+        color: $color-primary;
+    }
+}

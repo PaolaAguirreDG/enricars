@@ -1,0 +1,55 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.allCars {
+    padding: 40px 20px;
+    background-color: $color-gray-light;
+
+    .carsGrid {
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        @include desktop {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+    }
+
+    @include desktop {
+        padding: 50px 20px;
+        background-color: $color-gray-light;
+    }
+}
+
+.vehicleType {
+    @include flex-column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.badgeCars {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    border-radius: 3rem;
+    background-color: $color-gray-badge;
+    color: $color-gray-badge-text;
+    font-size: 1.7rem;
+    font-weight: 700;
+    gap: 1rem;
+
+    img {
+        height: 20px;
+        width: auto;
+    }
+}
+
+.showing {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $color-gray-text;
+    padding: 1rem 0;
+    margin: 0;
+}

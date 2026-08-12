@@ -1,0 +1,26 @@
+// 1. Abstracts (Variables, Mixins)
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+
+// 2. Base (Reset, Tipografía, Estilos generales)
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/general';
+
+// 3. Components (Botones, Tarjetas, Formularios)
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/forms';
+
+// 4. Layout (Header, Footer, Hero)
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/hero';
+
+// 5. Pages (Páginas específicas)
+@use 'pages/home';
+@use 'pages/catalog';
+@use 'pages/history';
+@use 'pages/services';
+@use 'pages/contact';
+

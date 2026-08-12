@@ -1,0 +1,84 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.contactForm {
+    width: 100%;
+
+    @include desktop {
+        min-width: 0;
+    }
+}
+
+.formGroup {
+    @include flex-column;
+    margin-bottom: 2.5rem;
+
+    label {
+        margin-bottom: 0.8rem;
+        color: $color-gray-dark;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        border: 1px solid $color-gray-input-border;
+        border-radius: 1rem;
+        background-color: $color-white;
+        color: $color-gray-dark;
+        font-family: inherit;
+        font-size: 1.6rem;
+        outline: none;
+        box-sizing: border-box;
+
+        &:focus {
+            border-color: $color-dark;
+        }
+
+        &::placeholder {
+            color: $color-gray-placeholder;
+        }
+    }
+
+    input, select {
+        height: 5.4rem;
+        padding: 0 1.6rem;
+    }
+
+    select {
+        appearance: none;
+        -webkit-appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6' fill='none' stroke='%23444444' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 1.6rem center;
+        background-size: 1.6rem;
+    }
+
+    textarea {
+        min-height: 18rem;
+        padding: 1.6rem;
+        resize: vertical;
+    }
+}
+
+.formRow {
+    @include flex-column;
+
+    @include tablet {
+        flex-direction: row;
+        gap: 2.5rem;
+
+        .formGroup {
+            flex: 1;
+        }
+    }
+
+    @include desktop {
+        flex-direction: row;
+        gap: 2.5rem;
+
+        .formGroup {
+            flex: 1;
+        }
+    }
+}

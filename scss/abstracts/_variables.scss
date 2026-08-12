@@ -1,0 +1,51 @@
+// Colores principales
+$color-primary: #db0038;
+$color-primary-hover: #ba0132;
+$color-primary-dark: #ab002d;
+$color-dark: #171717;
+$color-dark-alt: #222222;
+$color-dark-subtle: #172033;
+$color-white: #ffffff;
+
+// Escala de Grises
+$color-gray-dark: #444444;
+$color-gray-medium: #666666;
+$color-gray-text: #555555;
+$color-gray-body: #4d5668;
+$color-gray-light: #ededed;
+$color-gray-lighter: #eceeed;
+$color-gray-border: #eeeeee;
+$color-gray-subtle: #fafafa;
+$color-gray-badge: #d4d4d4;
+$color-gray-badge-text: #6e7682;
+$color-gray-tag: #56616e;
+$color-gray-placeholder: #9aa3ad;
+$color-gray-input-border: #d8dee5;
+$color-gray-card-bg: #eeeeee;
+$color-gray-card-title: #10253f;
+$color-gray-card-text: #40546a;
+$color-gray-hover: #4a4a4a;
+$color-text-muted: #b7b7b7;
+$color-text-alt: #b9b9b9;
+
+// Colores de acento
+$color-green: #00A63E;
+$color-green-hover: #008f35;
+$color-purple: #9810FA;
+$color-purple-hover: #890fe0;
+$color-amber-light: #fdebd3;
+
+// Sombras
+$shadow-card: 0 8px 18px rgba(23, 23, 23, 0.196);
+$shadow-history: 0 10px 30px rgba(0, 0, 0, 0.15);
+$shadow-history-desktop: 0 12px 35px rgba(0, 0, 0, 0.15);
+$shadow-service: 0 4px 10px rgba(23, 23, 23, 0.078);
+$shadow-map: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.12);
+
+// Tipografía
+$font-main: "Inter", sans-serif;
+
+// Breakpoints
+$breakpoint-tablet-min: 501px;
+$breakpoint-tablet-max: 1023px;
+$breakpoint-desktop: 1024px;

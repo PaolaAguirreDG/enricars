@@ -1,46 +1,23 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
-/* Tipografía */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-/* font-family: "Inter", sans-serif; */
-
-/* -------------------------------------------------------------------- */
-/* 1. Reset
-2. Variables
-3. Tipografía
-4. Estilos generales
-5. Header
-6. Hero
-7. Botones
-8. Cards
-9. Formularios
-10. Footer
-11. Animaciones
-12. Media Queries
-    - Tablet
-    - Desktop */
-
-/* ------------------------------------------------------- */
-
-/* Estilos generales */
 
 body {
-    font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-hr{
-    border: 0;
-    border-top: 1px solid #444444;
-    margin: 0;
+hr {
+  border: 0;
+  border-top: 1px solid #444444;
+  margin: 0;
 }
+
 .separator {
   width: 100%;
   height: 1px;
@@ -49,1578 +26,1359 @@ hr{
 }
 
 .wrapper {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
-
-/* ==========================
-   HEADER
-========================== */
-
-header, footer {
-    background-color: #171717;
-    color: #ffffff;
-}
-header {
-    font-size: 1.5rem;
-}
-.fondoNav {
-    background-color: #171717;
-    padding: 10px 0;
-}
-.logoHeader{
-    max-width: 180px;
-    width: 100%;
-    height: auto;
-}
-
-/* Enlaces del menú */
-.navbar .nav-link {
-    color: #ffffff;
-    font-size: 1.5rem;
-    font-weight: 500;
-    transition: color .3s ease;
-}
-
-/* Hover */
-.navbar .nav-link:hover {
-    color: #444444;
-}
-
-/* Página activa */
-.navbar .nav-link.active {
-    color: #db0038 !important;
-    font-weight: 700;
-}
-.btnSell {
-    background-color: #db0038;
-    color: #ffffff;
-    border-radius: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-}
-.btn:hover {
-    background-color: #ba0132;
-    color: white;
-}
-
-.navbar-toggler {
-    border-color: #171717;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
-}
-
-
-/* ==========================
-   MAIN
-========================== */
 
 main {
-    background-color: #ffffff;
-    color: #171717;
+  background-color: #ffffff;
+  color: #171717;
 }
 
-/* ////// HERO /////// */
-
-.hero {
-    position: relative;
-    min-height: 600px;
-    background-image: 
-
-        linear-gradient(#171717d9),   
-        url(../assets/heroMobile.webp);
-
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 40px 20px;
-}
-
-.heroContent {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-}
-
-.hero h1 {
-    margin: 0 0 25px;
-    color: white;
-    font-size: 4rem;
-    line-height: 1.05;
-    font-weight: 700;
-}
-
-.hero p {
-    margin: 0 0 35px;
-    color: white;
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
-
-.heroButtons {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.btnSell, .btnPrimary {
+  background-color: #db0038;
+  color: #ffffff;
 }
 
 .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 45px;
-    padding: 0 30px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 600;
-    transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 45px;
+  padding: 0 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: 0.3s ease;
 }
-
-.btnPrimary {
-    background-color: #db0038;
-    color: white;
+.btn:hover {
+  background-color: #ba0132;
+  color: #ffffff;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .btn {
+    min-width: 220px;
+  }
+}
+@media (min-width: 1024px) {
+  .btn {
+    min-width: 200px;
+    min-height: 45px;
+    font-size: 1.5rem;
+  }
 }
 
 .btnPrimary span {
-    margin-left: 15px;
-    font-size: 1.5rem;
+  margin-left: 15px;
+  font-size: 1.5rem;
 }
-
 .btnPrimary:hover {
-    background-color: #ab002d;
+  background-color: #ab002d;
+}
+.btnPrimary img {
+  height: 2rem;
+  width: auto;
 }
 
 .btnSecondary {
-    border: 2px solid white;
-    color: white;
-    background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
 }
-
 .btnSecondary:hover {
-    border: 2px solid white;
-    background-color: #ffffff2d;
-    color: white;
-
+  border: 2px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.176);
+  color: #ffffff;
 }
 
-/* ////// SECTION VEHICULOS DESTACADOS /////// */
-
-.featuredCars {
-    padding: 50px 20px;
-    background-color: #ededed;
+.btnSell {
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
 }
-
-/* Título */
-
-.sectionTitles {
-    text-align: center;
-    margin-bottom: 35px;
+@media (min-width: 501px) and (max-width: 1023px) {
+  .btnSell {
+    width: 220px;
+  }
 }
-
-.sectionTitles h2 {
-    margin: 0 0 10px;
-    color: #171717;
-    font-size: 3.5rem;
-    font-weight: 700;
-}
-
-.sectionTitles p {
+@media (min-width: 1024px) {
+  .btnSell {
     margin: 0;
-    color: #444444;
-    font-size: 1.9rem;
-
+  }
 }
 
-/* Grid */
-
-.carsGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 25px;
+.btnInfo {
+  flex: 1;
+  min-width: 0;
+  border: 2px solid #db0038;
+  color: #db0038;
+  background-color: transparent;
+}
+.btnInfo:hover {
+  border: 2px solid #db0038;
+  background-color: rgba(235, 0, 55, 0.043);
+  color: #db0038;
 }
 
-/* Card */
-
-.carsCard {
-    overflow: hidden;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 8px 18px #17171732;
+.carsCard, .detailCard {
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(23, 23, 23, 0.196);
 }
-
-/* Imagen */
 
 .carsImage {
-    position: relative;
-    width: 100%;
-    height: 220px;
+  position: relative;
+  width: 100%;
+  height: 220px;
 }
-
 .carsImage img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
-
-/* Año */
+@media (min-width: 1024px) {
+  .carsImage {
+    height: 260px;
+  }
+}
 
 .carsYear {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-
-    padding: 7px 13px;
-
-    background-color: #db0038;
-    color: white;
-
-    border-radius: 20px;
-
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-/* Contenido */
-
-.carsContent {
-    display: flex;
-    padding: 18px;
-    flex-direction: column;
-}
-
-.carsContent h3 {
-    margin: 0 0 6px;
-    color: #171717;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-/* Precio */
-
-.carsPrice {
-    color: #db0038;
-
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-/* Tags */
-
-.carsTags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-
-    margin-bottom: 20px;
-}
-
-.carsTags span {
-    padding: 2px 11px;
-    background-color: #eceeed;
-    color: #56616e;
-
-    border-radius: 20px;
-
-    font-size: 1.2rem;
-
-}
-
-/* Botones card */
-
-.carsButtons {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-}
-
-.carsButtons .btnPrimary {
-    flex: 3;
-    min-width: 0;
-}
-
-
-.carsButtons .btnInfo {
-    flex: 1;
-    min-width: 0;
-    border: 2px solid #db0038;
-    color: #db0038;
-    background-color: transparent;
-}
-
-.btnInfo:hover {
-    border: 2px solid #db0038;
-    background-color: #eb00370b;
-    color: #db0038;
-
-}
-
-/* Boton catalogo */
-
-.ctaContainer {
-    display: flex;
-    justify-content: center;
-    margin-top: 55px;
-}
-
-/* ////// SECTION BENEFICIOS /////// */
-
-.bonus {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: white;
-}
-
-.bonusGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 25px;
-    margin: 0 auto;
-}
-
-.bonusCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.bonusImage {
-    width: 70px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.bonusImage img {
-    width: 70px;
-    display: flex;
-    object-fit: cover;
-}
-.bonusContent {
-    display: flex;
-    padding: 18px;
-    flex-direction: column;
-}
-
-.bonusContent h3 {
-    justify-content: center;
-    color: #171717;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.bonusContent p {
-    margin: 0;
-    color: #444444;
-    font-size: 1.5rem;
-}
-
-/* ////// CTA /////// */
-
-.cta {
-    background-color: #171717;
-    padding: 6rem 2rem;
-}
-
-.cta h2 {
-    color: white;
-}
-
-.cta p {
-    color: #b7b7b7;
-}
-
-/* ////// HERO PÁGINAS INTERNAS /////// */
-
-.heroInner {
-    background-color: #171717;
-    padding: 5rem 2rem;
-    text-align: center;
-    border-top: 1px solid #444444;
-}
-
-.heroContainer {
-    width: 90%;
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-.heroTitle {
-    font-size: 4rem;
-    font-weight: 700;
-    color: white;
-    margin-bottom: 1.6rem;
-}
-
-.heroText {
-    font-size: 1.9rem;
-    color: #b9b9b9;
-    line-height: 1.5;
-}
-
-/* ////// PÁGINAS CATÁLOGO /////// */
-
-.allCars {
-    padding: 40px 20px;
-    background-color: #ededed;
-}
-
-.vehicleType {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-}
-
-.badgeCars {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.8rem 2rem;
-    border-radius: 3rem;
-    background-color: #d4d4d4;
-    color: #6e7682;
-    font-size: 1.7rem;
-    font-weight: 700;
-    gap: 1rem;
-}
-
-.badgeCars img {
-    height: 20px;
-    width: auto;
-}
-
-.showing {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #555555;
-    padding: 1rem 0;
-    margin: 0;
-}
-
-.detailCard {
-    overflow: hidden;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 8px 18px #17171732;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 7px 13px;
+  background-color: #db0038;
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .carsType {
-    position: absolute;
-    top: 15px;
-    left: 15px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 7px 13px;
+  background-color: rgba(34, 34, 34, 0.533);
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+}
 
-    padding: 7px 13px;
+.carsContent {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+}
+.carsContent h3 {
+  margin: 0 0 6px;
+  color: #171717;
+  font-size: 2rem;
+  font-weight: 700;
+}
+@media (min-width: 1024px) {
+  .carsContent {
+    padding: 25px;
+  }
+}
 
-    background-color: #22222288;
-    color: white;
+.carsPrice {
+  color: #db0038;
+  font-size: 2rem;
+  font-weight: 700;
+}
 
-    border-radius: 20px;
+.carsTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.carsTags span {
+  padding: 2px 11px;
+  background-color: #eceeed;
+  color: #56616e;
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
 
-    font-size: 1rem;
-    font-weight: 600;
+.carsButtons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.carsButtons .btnPrimary {
+  flex: 3;
+  min-width: 0;
 }
 
 .carsSpecs {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.6rem;
-    margin: 1.5rem 0 2.5rem 0;
-    /* margin-bottom: 2.5rem; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+  margin: 1.5rem 0 2.5rem 0;
 }
 
 .specItem {
-    display:flex;
-    align-items:center;
-    gap:.8rem;
-    font-size:1.5rem;
-    color:#555;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.5rem;
+  color: #555555;
+}
+.specItem img {
+  width: 18px;
 }
 
-.specItem img{
-    width:18px;
+.bonusCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* ////// Nuestra historia/////// */
-
-
-.history {
-    padding: 4rem 2rem 0 2rem;
+.bonusImage {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bonusImage img {
+  width: 70px;
+  display: flex;
+  object-fit: cover;
 }
 
-.historyToday {
-    padding: 2rem 2rem 4rem 2rem;
-    background-color: #ededed;
+.bonusContent {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
 }
-
-
-.historyContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: min(1200px, 100%);
-    margin: auto;
+.bonusContent h3 {
+  justify-content: center;
+  color: #171717;
+  font-size: 2rem;
+  font-weight: 700;
 }
-
-.historyImage {
-    width: 100%;
-}
-
-.historyImage img {
-    display: block;
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    object-position: right center;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,.15);
-}
-
-.historyToday .historyImage img {
-    display: block;
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,.15);
-}
-
-
-.historyContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.historyContent h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #172033;
-    margin-bottom: 2rem;
-}
-
-.historyContent p {
-    font-size: 1.3rem;
-    line-height: 1.8;
-    color: #4d5668;
-    margin-bottom: 2rem;
-}
-
-.historyContent strong{
-    color: #172033;
-}
-
-/* ////// Servicios/////// */
-
-.services {
-    padding: 4rem 2rem;
-    background-color: #fafafa;
+.bonusContent p {
+  margin: 0;
+  color: #444444;
+  font-size: 1.5rem;
 }
 
 .serviceCard {
-    display: flex;
-    flex-direction: column;
-    padding: 2.5rem;
-    background-color: #fff;
-    border: 1px solid #eeeeee;
-    border-radius: 1.5rem;
-    box-shadow: 0 4px 10px #17171714;  
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 10px rgba(23, 23, 23, 0.078);
+}
+@media (min-width: 1024px) {
+  .serviceCard {
+    padding: 4rem;
+  }
+}
+.serviceCard.green li::before {
+  background-color: #00A63E;
+}
+.serviceCard.green .btnPrimary {
+  background-color: #00A63E;
+}
+.serviceCard.green .btnPrimary:hover {
+  background-color: #008f35;
+}
+.serviceCard.purple li::before {
+  background-color: #9810FA;
+}
+.serviceCard.purple .btnPrimary {
+  background-color: #9810FA;
+}
+.serviceCard.purple .btnPrimary:hover {
+  background-color: #890fe0;
 }
 
 .serviceIcon {
-    width: 70px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 .serviceIcon img {
-    width: 70px;
-    display: flex;
-    object-fit: cover;
+  width: 70px;
+  display: flex;
+  object-fit: cover;
 }
 
 .serviceContent h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
-
 .serviceContent p {
-    font-size: 1.3rem;
-    line-height: 1.7;
-    margin-bottom: 2rem;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
 }
-
 .serviceContent ul {
-    margin: 0 0 2.5rem;
-    padding: 0;
-    list-style: none;
+  margin: 0 0 2.5rem;
+  padding: 0;
+  list-style: none;
 }
-
 .serviceContent li {
-    font-size: 1.3rem;
-    position: relative;
-    padding-left: 1.7rem;
-    margin-bottom: 1rem;
+  font-size: 1.3rem;
+  position: relative;
+  padding-left: 1.7rem;
+  margin-bottom: 1rem;
 }
-
 .serviceContent li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.7rem;
-    width: 0.7rem;
-    height: 0.7rem;
-    border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
 }
-
-/* ------ Rojo -------- */
 
 .red li::before {
-    background-color: #db0038;
+  background-color: #db0038;
 }
-
-/* ------ Verde -------- */
-
-.green li::before {
-    background-color: #00A63E;
-}
-
-.serviceCard.green .btnPrimary {
-    background-color: #00A63E;
-}
-
-.serviceCard.green .btnPrimary:hover {
-    background-color: #008f35;
-}
-
-
-/* ------ Violeta -------- */
-
-.purple li::before {
-    background-color: #9810FA;
-}
-
-.serviceCard.purple .btnPrimary {
-    background-color: #9810FA;
-}
-
-.serviceCard.purple .btnPrimary:hover {
-    background-color: #890fe0;
-}
-
-/* <!-- PROCESO DE COMPRA --> */
-
-.purchaseStep {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Número */
-
-.stepNumber {
-    display: block;
-    margin-bottom: 1rem;
-    font-size: 5rem;
-    font-weight: 800;
-    line-height: 1;
-    color: #fdebd3;
-}
-
-/* Título */
-
-.purchaseStep h3 {
-    margin: 0 0 1rem;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-/* Descripción */
-
-.purchaseStep p {
-    max-width: 32rem;
-    margin: 0;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    color: #444444;
-}
-
-/* =========================
-   CONTACTO
-========================= */
-
-.contactSection {
-    padding: 4rem 2rem;
-}
-
-
-/* Títulos */
-
-.contactSection h2 {
-    margin: 0 0 2.5rem;
-    color: #171717;
-    font-size: 2.8rem;
-    font-weight: 700;
-}
-
-
-/* =========================
-   FORMULARIO
-========================= */
-
-.contactForm {
-    width: 100%;
-}
-
-.formGroup {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2.5rem;
-}
-
-.formGroup label {
-    margin-bottom: 0.8rem;
-    color: #444444;
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-.formGroup input,
-.formGroup select,
-.formGroup textarea {
-    width: 100%;
-    border: 1px solid #d8dee5;
-    border-radius: 1rem;
-    background-color: #fff;
-    color: #444444;
-    font-family: inherit;
-    font-size: 1.6rem;
-    outline: none;
-    box-sizing: border-box;
-}
-
-.formGroup input,
-.formGroup select {
-    height: 5.4rem;
-    padding: 0 1.6rem;
-}
-
-.formGroup select {
-    appearance: none;
-    -webkit-appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6' fill='none' stroke='%23444444' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 1.6rem center;
-    background-size: 1.6rem;
-}
-.formGroup textarea {
-    min-height: 18rem;
-    padding: 1.6rem;
-    resize: vertical;
-}
-
-.formGroup input::placeholder,
-.formGroup textarea::placeholder {
-    color: #9aa3ad;
-}
-
-
-/* Focus */
-
-.formGroup input:focus,
-.formGroup select:focus,
-.formGroup textarea:focus {
-    border-color: #171717;
-}
-
-
-/* Email + teléfono */
-
-.formRow {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Botón */
-
-.contactForm .btnPrimary img {
-    height: 2rem;
-    width: auto;
-}
-
-
-/* Ubicación  */
-
-.contactLocation {
-    margin-top: 5rem;
-}
-
-.mapContainer {
-    width: 100%;
-    height: 30rem;
-    overflow: hidden;
-    border-radius: 1.5rem;
-    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.12);
-}
-
-.mapContainer iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    display: block;
-}
-
-
-/* =========================
-   TARJETA VISITANOS
-========================= */
 
 .visitCard {
-    margin-top: 2.5rem;
-    padding: 3rem 2rem;
-
-    border-radius: 1.5rem;
-
-    background-color: #eeeeee;
+  margin-top: 2.5rem;
+  padding: 3rem 2rem;
+  border-radius: 1.5rem;
+  background-color: #eeeeee;
 }
-
 .visitCard h3 {
-    margin: 0 0 2rem;
-
-    color: #10253f;
-    font-size: 2.3rem;
+  margin: 0 0 2rem;
+  color: #10253f;
+  font-size: 2.3rem;
 }
-
 .visitCard > p {
-    margin: 0 0 2rem;
-
-    color: #40546a;
-    font-size: 1.6rem;
-    line-height: 1.6;
+  margin: 0 0 2rem;
+  color: #40546a;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .visitCard {
+    padding: 3.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .visitCard {
+    padding: 3.5rem;
+  }
 }
 
 .importantBox {
-    padding: 2rem;
-
-    border-radius: 1rem;
-
-    background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
 }
-
 .importantBox p {
-    margin: 0 0 1.5rem;
-
-    color: #40546a;
-    font-size: 1.5rem;
-    line-height: 1.5;
+  margin: 0 0 1.5rem;
+  color: #40546a;
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
-
 .importantBox strong {
-    color: #10253f;
+  color: #10253f;
 }
-
 .importantBox a {
-    color: #e9003d;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-decoration: none;
+  color: #e9003d;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
 }
 
+.contactForm {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .contactForm {
+    min-width: 0;
+  }
+}
 
-/* ==========================
-   FOOTER
-========================== */
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+.formGroup label {
+  margin-bottom: 0.8rem;
+  color: #444444;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.formGroup input, .formGroup select, .formGroup textarea {
+  width: 100%;
+  border: 1px solid #d8dee5;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  color: #444444;
+  font-family: inherit;
+  font-size: 1.6rem;
+  outline: none;
+  box-sizing: border-box;
+}
+.formGroup input:focus, .formGroup select:focus, .formGroup textarea:focus {
+  border-color: #171717;
+}
+.formGroup input::placeholder, .formGroup select::placeholder, .formGroup textarea::placeholder {
+  color: #9aa3ad;
+}
+.formGroup input, .formGroup select {
+  height: 5.4rem;
+  padding: 0 1.6rem;
+}
+.formGroup select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6' fill='none' stroke='%23444444' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1.6rem center;
+  background-size: 1.6rem;
+}
+.formGroup textarea {
+  min-height: 18rem;
+  padding: 1.6rem;
+  resize: vertical;
+}
+
+.formRow {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .formRow {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+  .formRow .formGroup {
+    flex: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .formRow {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+  .formRow .formGroup {
+    flex: 1;
+  }
+}
+
+header {
+  background-color: #171717;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  header {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 1024px) {
+  header nav ul {
+    flex-direction: row;
+  }
+}
+
+.fondoNav {
+  background-color: #171717;
+  padding: 10px 0;
+}
+@media (min-width: 1024px) {
+  .fondoNav {
+    padding: 13px 20px;
+  }
+}
+
+.logoHeader {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .logoHeader {
+    width: 210px;
+  }
+}
+@media (min-width: 1024px) {
+  .logoHeader {
+    width: 250px;
+    max-width: none;
+  }
+}
+
+.navbar .nav-link {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+  color: #444444;
+}
+.navbar .nav-link.active {
+  color: #db0038 !important;
+  font-weight: 700;
+}
+@media (min-width: 1024px) {
+  .navbar .container {
+    max-width: 1200px;
+    margin: 0 auto !important;
+  }
+}
+
+.navbar-toggler {
+  border-color: #171717;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (min-width: 1024px) {
+  .navbar-collapse {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1023px) {
+  .navbar-nav {
+    margin: 2rem 0;
+  }
+}
+@media (min-width: 1024px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 2rem 0 0;
+  }
+  .navbar-nav .nav-item {
+    margin: 0.5rem;
+  }
+}
 
 footer {
-    background-color: #171717;
-    color: white;
-    padding: 5rem 2rem 2rem;
-    border-top: 1px solid #444444;
+  background-color: #171717;
+  color: #ffffff;
+  padding: 5rem 2rem 2rem;
+  border-top: 1px solid #444444;
+}
+@media (min-width: 1024px) {
+  footer {
+    padding: 7rem 8rem 2rem;
+  }
 }
 
 .footerContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .footerContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+  .footerContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+    margin: 0 20px;
+  }
 }
 
 .footerColumn h3 {
-    font-size: 1.7rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .footerColumn {
+    width: 48%;
+  }
+}
+@media (min-width: 1024px) {
+  .footerColumn {
+    flex: 1;
+  }
+  .footerColumn:first-child {
+    max-width: 320px;
+  }
 }
 
 .footerLogo {
-    width: 180px;
-    margin-bottom: 2rem;
+  width: 180px;
+  margin-bottom: 2rem;
 }
 
 .footerDescription {
-    color: #d4d4d4;
-    font-size: 1.5rem;
-    line-height: 1.5;
+  color: #d4d4d4;
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 
-.footerLinks, 
+.footerLinks,
 .footerContact ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.footerLinks li, .footerContact li {
-    margin-bottom: 1.4rem;
+.footerLinks li {
+  margin-bottom: 1.4rem;
 }
-
 .footerLinks a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
-
 .footerLinks a:hover {
-    color: #444444;
+  color: #444444;
 }
 
 .footerContact {
-    font-style: normal;
-    margin-top: 2rem;
+  font-style: normal;
+  margin-top: 2rem;
+}
+.footerContact li {
+  margin-bottom: 1.4rem;
+}
+.footerContact p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.footerContact a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.footerContact a:hover {
+  color: #444444;
 }
 
 .itemContact {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
 }
 
 .iconContact {
-    width: 2rem;
-    height: 2rem;
-    flex-shrink: 0;
-}
-
-.footerContact p {
-    font-size: 1.6rem;
-    line-height: 1.6;
-}
-
-.footerContact a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.4rem;
-}
-
-.footerContact a:hover {
-    color: #444444;
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
 }
 
 .footerSocial {
-    display: flex;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
-
 .footerSocial a {
-    width: 4rem;
-    height: 4rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 50%;
-
-    background: #4a4a4a;
-
-    color: white;
-
-    transition: .3s;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #4a4a4a;
+  color: #ffffff;
+  transition: 0.3s;
 }
-
 .footerSocial a:hover {
-    background: #db0038;
+  background: #db0038;
 }
-
-.footerSocial a svg{
-    width: 4rem;
-    height: 4rem;
+.footerSocial a svg {
+  width: 4rem;
+  height: 4rem;
 }
 
 .footerHours {
-    font-size: 1.3rem;
-    line-height: 1.8;
+  font-size: 1.3rem;
+  line-height: 1.8;
 }
 
 .upButton {
-    text-align: right;
-    padding: 0 20px 10px 20px;
+  text-align: right;
+  padding: 0 20px 10px 20px;
 }
+
 .up {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background-color: #444;
-    color: white;
-    text-decoration: none;
-    border-radius: 50%;
-    font-size: 1.2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #444444;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
 }
 .up:hover {
-    color: white;
-    background-color: #db0038;
+  color: #ffffff;
+  background-color: #db0038;
 }
 
 .footerBottom {
-    border-top: 1px solid #444444;
-    margin-top: 2rem;
-    padding-top: 2rem;
-
-    text-align: center;
-    
-    font-size: 1.2rem;
-    color: #d4d4d4;
+  border-top: 1px solid #444444;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #d4d4d4;
 }
 
+.hero {
+  position: relative;
+  min-height: 600px;
+  background-image: linear-gradient(rgba(23, 23, 23, 0.851)), url(../assets/heroMobile.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 40px 20px;
+}
+.hero h1 {
+  margin: 0 0 25px;
+  color: #ffffff;
+  font-size: 4rem;
+  line-height: 1.05;
+  font-weight: 700;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .hero h1 {
+    font-size: 6rem;
+    line-height: 1.05;
+    margin-bottom: 25px;
+  }
+}
+.hero p {
+  margin: 0 0 35px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .hero p {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  .hero p {
+    max-width: 700px;
+    font-size: 2rem;
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .hero {
+    min-height: 650px;
+    padding: 60px 50px;
+    background-image: linear-gradient(rgba(23, 23, 23, 0.851)), url(../assets/heroTablet.webp);
+    background-position: center;
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    min-width: 700px;
+    padding: 80px 6%;
+    background-image: linear-gradient(rgba(23, 23, 23, 0.851)), url(../assets/heroDesktop.webp);
+    background-position: center;
+  }
+}
 
+.heroContent {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .heroContent {
+    max-width: 650px;
+  }
+}
+@media (min-width: 1024px) {
+  .heroContent {
+    max-width: 700px;
+  }
+}
 
+.heroButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .heroButtons {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .heroButtons {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
 
-/* ============ MEDIA QUERY ============ */
+.heroInner {
+  background-color: #171717;
+  padding: 5rem 2rem;
+  text-align: center;
+  border-top: 1px solid #444444;
+}
+@media (min-width: 1024px) {
+  .heroInner {
+    padding: 6rem 2rem;
+  }
+}
 
-/* ////////////// TABLET ////////////// */
+.heroContainer {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.6rem;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .heroTitle {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .heroTitle {
+    font-size: 5rem;
+  }
+}
+
+.heroText {
+  font-size: 1.9rem;
+  color: #b9b9b9;
+  line-height: 1.5;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .heroText {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .heroText {
+    font-size: 2rem;
+  }
+}
 
 @media (min-width: 501px) and (max-width: 1023px) {
-    
-    /* Header */
-    header {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .logoHeader{
-        width:210px;
-    }
-
-    .navbar-nav{
-        margin:2rem 0;
-    }
-
-    .btnSell{
-        width:220px;
-    }
-    
-    /* Hero */
-
-    .hero {
-
-        min-height: 650px;
-        padding: 60px 50px;
-        background-image:
-            linear-gradient(#171717d9),   
-            url(../assets/heroTablet.webp);
-
-        background-position: center;
-    }
-
-    .heroContent {
-        max-width: 650px;
-    }
-
-    .hero h1 {
-        font-size: 3.5rem;
-    }
-
-    .hero p {
-        font-size: 1.8rem;
-    }
-
-    .heroButtons {
-        flex-direction: row;
-    }
-
-    .btn {
-        min-width: 220px;
-    }
-
-    /* Sección vehiculos destacados */
-
-    .featuredCars {
-        padding: 60px 20px;
-    }
-
-    .carsGrid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-    }
-
-    .carsImage {
-        height: 220px;
-    }
-
-    .bonusGrid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .cta{
-        padding: 60px 20px;
-    }
-
-    /* Hero paginas internas */
-
-    .heroCatalogo {
-        padding: 4rem 2rem;
-    }
-
-    .heroTitle {
-        font-size: 4rem;
-    }
-
-    .heroText {
-        font-size: 2rem;
-    }
-
-    .allCars .carsGrid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-    }
-
-    /* Nuestra historia */
-
-    .history{
-        padding: 6rem 4rem 0rem 4rem;
-    }
-
-    .historyToday {
-        padding: 2rem 4rem 6rem 4rem;
-    }
-
-    .historyImage img {
-        height: 420px;
-    }
-
-    .historyToday .historyImage img {
-        height: 420px;
-    }
-
-    .historyContent h2 {
-        font-size: 3rem;
-    }
-
-    .historyContent p {
-        font-size: 1.5rem;
-    }
-
-    /* Servicios */
-
-    .services {
-        padding: 5rem 4rem;
-    }
-
-    .servicesContainer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2.5rem;
-    }
-
-    /* Proceso de compra */
-
-    .stepNumber {
-        font-size: 5.5rem;
-    }
-
-    /* Contacto */
-
-    .contactSection {
-        padding: 6rem 4rem;
-    }
-
-    /*
-       Email y teléfono pasan
-       a estar uno al lado del otro
-    */
-    .formRow {
-        flex-direction: row;
-        gap: 2.5rem;
-    }
-
-    .formRow .formGroup {
-        flex: 1;
-    }
-
-    .mapContainer {
-        height: 40rem;
-    }
-
-    .visitCard {
-        padding: 3.5rem;
-    }
-
-
-
-    /* Footer */
-
-    .footerContainer {
-        flex-direction:row;
-        flex-wrap:wrap;
-        justify-content:space-between;
-    }
-
-    .footerColumn {
-        width: 48%;
-    }
-
-
-
-
+  .heroCatalogo {
+    padding: 4rem 2rem;
+  }
 }
 
-/* ///////// DESKTOP //////// */
+.featuredCars {
+  padding: 50px 20px;
+  background-color: #ededed;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .featuredCars {
+    padding: 60px 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .featuredCars {
+    padding: 65px 40px;
+  }
+}
+
+.sectionTitles {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.sectionTitles h2 {
+  margin: 0 0 10px;
+  color: #171717;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+@media (min-width: 1024px) {
+  .sectionTitles h2 {
+    font-size: 4rem;
+  }
+}
+.sectionTitles p {
+  margin: 0;
+  color: #444444;
+  font-size: 1.9rem;
+}
+@media (min-width: 1024px) {
+  .sectionTitles p {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .sectionTitles {
+    margin-bottom: 45px;
+  }
+}
+
+.carsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .carsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .carsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+
+.ctaContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 55px;
+}
+
+.bonus {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+@media (min-width: 1024px) {
+  .bonus {
+    padding: 65px 30px;
+  }
+}
+
+.bonusGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  margin: 0 auto;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .bonusGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .bonusGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.cta {
+  background-color: #171717;
+  padding: 6rem 2rem;
+}
+.cta h2 {
+  color: #ffffff;
+}
+.cta p {
+  color: #b7b7b7;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .cta {
+    padding: 60px 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .cta {
+    padding: 65px 0;
+  }
+}
+
+.allCars {
+  padding: 40px 20px;
+  background-color: #ededed;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .allCars .carsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .allCars .carsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .allCars {
+    padding: 50px 20px;
+    background-color: #ededed;
+  }
+}
+
+.vehicleType {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.badgeCars {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  border-radius: 3rem;
+  background-color: #d4d4d4;
+  color: #6e7682;
+  font-size: 1.7rem;
+  font-weight: 700;
+  gap: 1rem;
+}
+.badgeCars img {
+  height: 20px;
+  width: auto;
+}
+
+.showing {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #555555;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.history {
+  padding: 4rem 2rem 0 2rem;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .history {
+    padding: 6rem 4rem 0rem 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .history {
+    padding: 8rem 6rem 2rem 6rem;
+  }
+}
+
+.historyToday {
+  padding: 2rem 2rem 4rem 2rem;
+  background-color: #ededed;
+}
+.historyToday .historyImage img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .historyToday .historyImage img {
+    height: 420px;
+  }
+}
+@media (min-width: 1024px) {
+  .historyToday .historyImage img {
+    width: 100%;
+    height: 400px;
+    border-radius: 18px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+  }
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .historyToday {
+    padding: 2rem 4rem 6rem 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .historyToday {
+    padding: 3rem 6rem 8rem 6rem;
+  }
+}
+
+.historyContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: min(1200px, 100%);
+  margin: auto;
+}
+@media (min-width: 1024px) {
+  .historyContainer {
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+  }
+}
+
+.historyImage {
+  width: 100%;
+}
+.historyImage img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: right center;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .historyImage img {
+    height: 420px;
+  }
+}
+@media (min-width: 1024px) {
+  .historyImage img {
+    width: 100%;
+    height: 400px;
+    border-radius: 18px;
+    object-fit: cover;
+    object-position: right center;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+  }
+}
+@media (min-width: 1024px) {
+  .historyImage {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+.historyContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.historyContent h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #172033;
+  margin-bottom: 2rem;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .historyContent h2 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .historyContent h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1.8rem;
+  }
+}
+.historyContent p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #4d5668;
+  margin-bottom: 2rem;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .historyContent p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .historyContent p {
+    font-size: 1.5rem;
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+  }
+}
+.historyContent strong {
+  color: #172033;
+}
+@media (min-width: 1024px) {
+  .historyContent {
+    padding-inline: 1rem;
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+.services {
+  padding: 4rem 2rem;
+  background-color: #fafafa;
+}
+@media (min-width: 1024px) {
+  .services .carsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .services {
+    padding: 5rem 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .services {
+    padding: 6rem 5rem;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1023px) {
+  .servicesContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
 
 @media (min-width: 1024px) {
-    
-    /* Header */
-
-    header nav ul{
-        flex-direction: row;
-    }
-
-    .fondoNav {
-        padding: 13px 20px;
-    }
-
-    .logoHeader{
-        width:250px;
-        max-width: none;
-    }
-
-    .navbar .container {
-        max-width: 1200px;
-        margin: 0 auto !important
-    }
-
-    .navbar-collapse{
-        display: flex;
-        align-items: center;
-        justify-content:flex-end;
-    }
-
-    .navbar-nav{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 0 2rem 0 0;
-    }
-
-    .navbar-nav .nav-item{
-        margin: 0.5rem;
-    }
- 
-    .btnSell{
-        margin: 0;
-    }
-
-    /* HERO */
-
-    .hero {
-        min-width: 700px;
-        padding: 80px 6%;
-        background-image:
-
-            linear-gradient(#171717d9),   
-            url(../assets/heroDesktop.webp);
-        
-        background-position: center;        
-    }
-
-    .heroContent {
-        max-width: 700px;
-    }
-
-    .hero h1 {
-        font-size: 6rem;
-        line-height: 1.05;
-        margin-bottom: 25px;
-    }
-
-    .hero p {
-        max-width: 700px;
-        font-size: 2rem;
-        margin-bottom: 35px;
-    }
-
-    .heroButtons {
-        flex-direction: row;
-        gap: 20px;
-    }
-
-    .btn {
-        min-width: 200px;
-        min-height: 45px;
-        font-size: 1.5rem;
-    }
-
-    /* Sección vehiculos destacados */
-
-    .featuredCars {
-        padding: 65px 100px;
-    }
-
-    .sectionTitles {
-        margin-bottom: 45px;
-    }
-
-    .sectionTitles h2 {
-        font-size: 4rem;
-    }
-
-    .sectionTitles p {
-        font-size: 2rem;
-    }
-
-    .carsGrid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 40px;
-    }
-
-    .carsImage {
-        height: 260px;
-    }
-
-    .carsContent {
-        padding: 25px;
-    }
-
-    .bonus {
-        padding: 65px 30px;
-    }
-
-
-    .bonusGrid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .bonusContent p {
-        font-size: 1.5rem;
-    }
-
-    .cta{
-        padding: 65px 0;
-    }
-
-    /* Hero paginas internas */
-
-    .heroInner {
-        padding: 6rem 2rem;
-    }
-
-    .heroTitle {
-        font-size: 5rem;
-    }
-
-    .heroText {
-        font-size: 2rem;
-    }
-
-    /* Todos los vehículos */
-
-    .allCars {
-        padding: 50px 20px;
-        background-color: #ededed;
-    }
-
-    .allCars .carsGrid {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 25px;
-    }
-
-    /* Nuestra historia */
-
-    .history {
-        padding: 8rem 6rem 2rem 6rem;
-    }
-
-    .historyToday {
-        padding: 3rem 6rem 8rem 6rem;
-    }
-
-    .historyContainer {
-        flex-direction: row;
-        align-items: center;
-        gap: 4rem;
-    }
-
-    .historyImage {
-        flex: 1;
-        min-width: 0;
-    }
-
-    .historyContent {
-        padding-inline: 1rem;
-        flex: 1;
-        min-width: 0;
-    }
-
-    .historyImage img {
-        width: 100%;
-        height: 400px;
-        border-radius: 18px;
-        object-fit: cover;
-        object-position: right center;
-        box-shadow:0 12px 35px rgba(0,0,0,.15);
-    }
-
-    .historyToday .historyImage img {
-        width: 100%;
-        height: 400px;
-        border-radius:18px;
-        object-fit: cover;
-        object-position: center;
-        box-shadow:0 12px 35px rgba(0,0,0,.15);
-    }
-
-
-    .historyContent h2 {
-        font-size: 3.5rem;
-        margin-bottom: 1.8rem;
-    }
-
-    .historyContent p {
-        font-size: 1.5rem;
-        line-height: 1.9;
-        margin-bottom: 1.5rem;
-    }
-
-    /* Servicios */
-
-    .services {
-        padding: 6rem 8rem;
-    }
-
-    .services .carsGrid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3rem;
-    }
-
-    .serviceCard {
-        padding: 4rem;
-
-    }
-
-    .serviceButton {
-        margin-top: auto;
-    }
-
-    /* Proceso de compra */
-
-    .purchaseStep {
-        flex: 1;
-    }
-
-    .stepNumber {
-        margin-bottom: 1.5rem;
-        font-size: 7rem;
-    }
-
-    .purchaseStep h3 {
-        font-size: 2.2rem;
-    }
-
-    .purchaseStep p {
-        max-width: 30rem;
-        font-size: 1.7rem;
-    }
-
-    /* Contacto */
-
-        .contactSection {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5rem;
-
-        padding: 6rem;
-    }
-
-
-    /* FORMULARIO */
-
-    .contactForm {
-        min-width: 0;
-    }
-
-
-    /* EMAIL + TELÉFONO */
-
-    .formRow {
-        flex-direction: row;
-        gap: 2.5rem;
-    }
-
-    .formRow .formGroup {
-        flex: 1;
-    }
-
-
-    /* UBICACIÓN */
-
-    .contactLocation {
-        margin-top: 0;
-        min-width: 0;
-    }
-
-
-    /* MAPA */
-
-    .mapContainer {
-        height: 43rem;
-    }
-
-
-    /* TARJETA */
-
-    .visitCard {
-        padding: 3.5rem;
-    }
-
-
-
-    /* Footer */
-
-    .footer{
-        padding:7rem 8rem 2rem;
-    }
-
-    .footerContainer{
-        flex-direction:row;
-        justify-content:space-between;
-        align-items:flex-start;
-        gap:5rem;
-        margin: 0 100px;
-    }
-
-    .footerColumn{
-        flex:1;
-    }
-
-    .footerColumn:first-child{
-        max-width:320px;
-    }
-
-
-
-
-
+  .serviceButton {
+    margin-top: auto;
+  }
 }
 
+.purchaseStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.purchaseStep h3 {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+@media (min-width: 1024px) {
+  .purchaseStep h3 {
+    font-size: 2.2rem;
+  }
+}
+.purchaseStep p {
+  max-width: 32rem;
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #444444;
+}
+@media (min-width: 1024px) {
+  .purchaseStep p {
+    max-width: 30rem;
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 1024px) {
+  .purchaseStep {
+    flex: 1;
+  }
+}
 
+.stepNumber {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #fdebd3;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .stepNumber {
+    font-size: 5.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .stepNumber {
+    margin-bottom: 1.5rem;
+    font-size: 7rem;
+  }
+}
+
+.contactSection {
+  padding: 4rem 2rem;
+}
+.contactSection h2 {
+  margin: 0 0 2.5rem;
+  color: #171717;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .contactSection {
+    padding: 6rem 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .contactSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    padding: 6rem;
+  }
+}
+
+.contactLocation {
+  margin-top: 5rem;
+}
+@media (min-width: 1024px) {
+  .contactLocation {
+    margin-top: 0;
+    min-width: 0;
+  }
+}
+
+.mapContainer {
+  width: 100%;
+  height: 30rem;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.12);
+}
+.mapContainer iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .mapContainer {
+    height: 40rem;
+  }
+}
+@media (min-width: 1024px) {
+  .mapContainer {
+    height: 43rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
