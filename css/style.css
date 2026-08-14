@@ -810,7 +810,6 @@ footer {
 }
 @media (min-width: 1024px) {
   .hero {
-    min-width: 700px;
     padding: 80px 6%;
     background-image: linear-gradient(rgba(23, 23, 23, 0.851)), url(../assets/heroDesktop.webp);
     background-position: center;
