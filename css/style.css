@@ -435,8 +435,10 @@ main {
   outline: none;
   box-sizing: border-box;
 }
-.formGroup input:focus, .formGroup select:focus, .formGroup textarea:focus {
+.formGroup input:focus-visible, .formGroup select:focus-visible, .formGroup textarea:focus-visible {
   border-color: #171717;
+  outline: 2px solid #171717;
+  outline-offset: 2px;
 }
 .formGroup input::placeholder, .formGroup select::placeholder, .formGroup textarea::placeholder {
   color: #9aa3ad;
@@ -549,8 +551,8 @@ header {
 .navbar-toggler {
   border-color: #171717;
 }
-.navbar-toggler:focus {
-  box-shadow: none;
+.navbar-toggler:focus-visible {
+  box-shadow: 0 0 0 2px #171717;
 }
 
 @media (min-width: 1024px) {

@@ -31,15 +31,16 @@
         outline: none;
         box-sizing: border-box;
 
-        &:focus {
+        &:focus-visible {
             border-color: $color-dark;
+            outline: 2px solid $color-dark;
+            outline-offset: 2px;
         }
 
         &::placeholder {
             color: $color-gray-placeholder;
         }
     }
-
     input, select {
         height: 5.4rem;
         padding: 0 1.6rem;

@@ -18,7 +18,7 @@
             <div class="container mx-4">
 
                 <!-- Logo -->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="../index.html">
                     <img src="../assets/logoEnriCars.svg"
                         alt="EnriCars Automotores"
                         class="logoHeader">
@@ -60,14 +60,14 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Contacto</a>
+                            <a class="nav-link active" href="./contacto.html">Contacto</a>
                         </li>
 
                     </ul>
 
-                    <button class="btn btnSell">
+                    <a class="btn btnSell" href="./contacto.html">
                         Vender mi auto
-                    </button>
+                    </a>
 
                 </div>
 
@@ -101,7 +101,10 @@
 
                 <h2>Envíanos un Mensaje</h2>
 
-                <form action="#" method="post">
+                <form action="https://formsubmit.co/pruebasproyectos.25@gmail.com" method="post">
+
+                    <input type="hidden" name="_subject" value="Nuevo mensaje desde EnriCars">
+                    <input type="hidden" name="_captcha" value="false">
 
                     <div class="formGroup">
                         <label for="nombre">Nombre Completo *</label>
@@ -178,7 +181,7 @@
                 <h2>Ubicación</h2>
 
                 <div class="mapContainer">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.559170922213!2d-58.59558628814647!3d-34.71629717280107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc77f0f1d2e4b%3A0x22a56a8fc2345588!2sEnri%20car%20automotores!5e0!3m2!1ses-419!2sar!4v1778159134947!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.559170922213!2d-58.59558628814647!3d-34.71629717280107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc77f0f1d2e4b%3A0x22a56a8fc2345588!2sEnri%20car%20automotores!5e0!3m2!1ses-419!2sar!4v1778159134947!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" title="Ubicación de EnriCars Automotores" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
 
@@ -214,22 +217,16 @@
 
         </section>
 
-
-
-
-
-
     </main>
 
     <footer>
 
-        <div class="footerContainer">
-            
+        <div class="footerContainer">            
                                     
             <!-- Logo -->
             <div class="footerColumn">
 
-                <a href="index.html">
+                <a href="../index.html">
                     <img src="../assets/logoEnriCars.svg" alt="Enricars Automotores" class="footerLogo">        
                 </a>
                 <p class="footerDescription">
@@ -246,7 +243,7 @@
                 <h3>Enlaces Rápidos</h3>
 
                 <ul class="footerLinks">
-                    <li><a href="#">Inicio</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
                     <li><a href="./catalogo.html">Catálogo</a></li>
                     <li><a href="./nosotros.html">Nosotros</a></li>
                     <li><a href="./servicios.html">Servicios</a></li>
@@ -266,7 +263,7 @@
                         <li class="itemContact">
 
                             <img src="../assets/iconos/ubicacion.svg" alt="" aria-hidden="true" class="iconContact">
-                            <a href="https://www.google.com/maps/place/Enri+car+automotores/@-34.7162971,-58.5978715,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcc77f0f1d2e4b:0x22a56a8fc2345588!8m2!3d-34.7162972!4d-58.593006!16s%2Fg%2F11mtfv_hv9?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                            <a href="https://www.google.com/maps/place/Enri+car+automotores/@-34.7162971,-58.5978715,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcc77f0f1d2e4b:0x22a56a8fc2345588!8m2!3d-34.7162972!4d-58.593006!16s%2Fg%2F11mtfv_hv9?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
                                 Av. Brig. Gral. Juan Manuel de Rosas 8396<br>
                                 Isidro Casanova - Buenos Aires</a>
 
@@ -292,7 +289,7 @@
             <!-- Redes + horario de atención-->
             <div class="footerColumn">
                 
-                <h3>Séguinos</h3>
+                <h3>Seguinos</h3>
 
                 <div class="footerSocial">
 
@@ -305,8 +302,6 @@
                         <!-- SVG de Facebook -->
 
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-                            <path d="M129.97,92.49l-1.44,11.56..."
-                            fill="#fff"/>
                             <path d="M129.97,92.49l-1.44,11.56c-.24,1.93-1.88,3.38-3.82,3.38h-18.72v48.32c-1.98.18-3.97.27-6,.27-4.52,0-8.94-.46-13.2-1.31v-47.28h-14.39c-1.32,0-2.4-1.08-2.4-2.41v-14.46c0-1.32,1.08-2.41,2.4-2.41h14.39v-21.69c0-13.31,10.75-24.1,24-24.1h16.8c1.32,0,2.4,1.08,2.4,2.41v14.46c0,1.32-1.08,2.41-2.4,2.41h-12c-5.3,0-9.6,4.32-9.6,9.64v16.87h20.16c2.31,0,4.1,2.04,3.82,4.34h0Z" fill="#fff"/>
                         </svg>
 
@@ -322,8 +317,6 @@
                          
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
 
-                            <path d="M129.97,92.49l-1.44,11.56..."
-                            fill="#fff"/>
                             <path fill="#FFFFFF"
                                 d="M128.67,44.57h-57.34c-14.77,0-26.76,11.98-26.76,26.76v57.34c0,14.77,11.98,26.76,26.76,26.76h57.34c14.77,0,26.76-11.98,26.76-26.76v-57.34c0-14.77-11.98-26.76-26.76-26.76ZM145.87,126.76c0,10.55-8.56,19.11-19.11,19.11h-53.52c-10.55,0-19.11-8.56-19.11-19.11v-53.52c0-10.55,8.56-19.11,19.11-19.11h53.52c10.55,0,19.11,8.56,19.11,19.11v53.52Z"/>
 

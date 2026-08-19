@@ -70,9 +70,9 @@ header {
 .navbar-toggler {
     border-color: $color-dark;
 
-    &:focus {
-        box-shadow: none;
-    }
+    &:focus-visible {
+        box-shadow: 0 0 0 2px $color-dark;
+    }    
 }
 
 .navbar-collapse {
